@@ -15,6 +15,9 @@
   <!-- boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- link favicon rafael.f -->
   <link rel="shortcut icon" href="./favicon/Rafael-Fagundes-Icone.ico" type="image/x-icon">
 
@@ -40,31 +43,31 @@
             <li class="nav-item ms-4">
               <a class="navTitles" href="#sobre">SOBRE</a>
             </li>
-            <li class="nav-item ms-4"> 
+            <li class="nav-item ms-4">
               <a class="navTitles" href="#projetos">PROJETOS</a>
             </li>
-            <li class="nav-item ms-4"> 
+            <li class="nav-item ms-4">
               <a class="navTitles" href="#serviços">SERVIÇOS</a>
             </li>
-            <li class="nav-item ms-4"> 
+            <li class="nav-item ms-4">
               <a class="navTitles" href="#contato">CONTATO</a>
             </li>
-            <li class="nav-item ms-5"> 
+            <li class="nav-item ms-5">
               <a class="navTitles" href="https://www.linkedin.com/in/rafael-fagundes-518974258" target="_blank">
                 <i class='bx bxl-linkedin fs-2'></i>
               </a>
             </li>
-            <li class="nav-item ms-2"> 
+            <li class="nav-item ms-2">
               <a class="navTitles" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank">
                 <i class='bx bxl-instagram fs-2'></i>
               </a>
             </li>
-            <li class="nav-item ms-2"> 
+            <li class="nav-item ms-2">
               <a class="navTitles" href="https://github.com/FalconTFagundes" target="_blank">
                 <i class='bx bxl-github fs-2'></i>
               </a>
             </li>
-            <li class="nav-item ms-2"> 
+            <li class="nav-item ms-2">
               <a class="navTitles" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank">
                 <i class='bx bxl-facebook fs-2'></i>
               </a>
@@ -81,8 +84,8 @@
   <div class="container text-center">
     <div class="row">
       <div class="col">
-        <div class="hero-section">
-          <div class="hero-text text-center">
+        <div class="hero-section" >
+          <div class="hero-text text-center" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="1000">
             <h1 class="fs-1 fs-md-3">
               <span style="color: gray;">
                 < </span> Olá! Sou Rafael Fagundes <span style="color: gray;"> > </span>
@@ -90,7 +93,7 @@
             <p>Mais do que código, sou apaixonado por resolver problemas e contribuir para soluções que melhoram a vida
               das pessoas.</p>
           </div>
-          <div class="hero-image">
+          <div class="hero-image" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1050">
             <img src="img/rafaelFagundes.png" alt="Rafael Fagundes" class="img-fluid">
           </div>
         </div>
@@ -119,7 +122,14 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
 
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <!-- INIT AOS -->
+  <script>
+    AOS.init();
+  </script>
+  
 </body>
 
 </html>
