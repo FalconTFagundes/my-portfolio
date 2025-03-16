@@ -35,14 +35,32 @@
           <li class="ms-5"><a class="text-decoration-none navTitles" href="#projetos">PROJETOS</a></li>
           <li class="ms-5"><a class="text-decoration-none navTitles" href="#serviços">SERVIÇOS</a></li>
           <li class="ms-5"><a class="text-decoration-none navTitles" href="#contato">CONTATO</a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#linkedin"><i class='bx bxl-linkedin fs-1'></i></a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#instagram"><i class='bx bxl-instagram fs-1'></i></a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#github"><i class='bx bxl-github fs-1'></i></a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#facebook"><i class='bx bxl-facebook fs-1'></i></a></li>
+          <li class="ms-5"><a class="text-decoration-none navTitles" href="#linkedin"><i
+                class='bx bxl-linkedin fs-1'></i></a></li>
+          <li class="ms-5"><a class="text-decoration-none navTitles" href="#instagram"><i
+                class='bx bxl-instagram fs-1'></i></a></li>
+          <li class="ms-5"><a class="text-decoration-none navTitles" href="#github"><i
+                class='bx bxl-github fs-1'></i></a></li>
+          <li class="ms-5"><a class="text-decoration-none navTitles" href="#facebook"><i
+                class='bx bxl-facebook fs-1'></i></a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+
+<div class="hero-section">
+    <div class="hero-image">
+        <img src="img/rafaelFagundes.png" alt="Rafael Fagundes">
+    </div>
+    <div class="hero-text">
+        <h1>Olá, eu sou Rafael Fagundes</h1>
+        <p>Desenvolvedor e apaixonado por tecnologia</p>
+    </div>
+</div>
+
+
+
 
 
 

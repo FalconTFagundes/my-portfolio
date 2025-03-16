@@ -25,11 +25,43 @@
     
 }
 
+
 .navbar-brand img {
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
-  
-  .navbar-brand img:hover {
-    filter: brightness(0.6);
-  }
-  
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  filter: brightness(0.6);
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 71vh;
+    padding: 0 10%;
+    flex-direction: row-reverse;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
+    transform: scale(1.4);
+}
+
+.hero-text {
+    flex: 1;
+    color: rgb(122, 122, 122);
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
