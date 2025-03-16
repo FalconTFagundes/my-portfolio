@@ -1,28 +1,30 @@
 @keyframes fadeDescendo {
-    from {
-      opacity: 0;
-      transform: translateY(-50px); 
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
   }
-  
-  header {
-    animation: fadeDescendo 1s ease-in-out;
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-.navTitles{
-    color: white;
-    transition-duration: 0.3s;
-    font-size: large;
-    font-family: 'Montserrat', sans-serif;
 }
 
-.navTitles:hover{
-    color: rgb(143, 143, 143);
-    
+header {
+  animation: fadeDescendo 1s ease-in-out;
+}
+
+.navTitles {
+  color: rgb(255, 255, 255);
+  transition-duration: 0.3s;
+  font-size: medium;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navTitles:hover {
+  color: rgb(146, 142, 142);
 }
 
 
@@ -35,32 +37,34 @@
 }
 
 .hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 71vh;
-    padding: 0 10%;
-    flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  padding: 0 8%;
+  overflow: hidden;/
 }
 
 .hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
 }
 
 .hero-image img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    transform: scale(1.4);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.4);
 }
 
 .hero-text {
-    flex: 1;
-    color: rgb(122, 122, 122);
-    text-align: left;
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
+  flex: 1;
+  color: rgb(122, 122, 122);
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero-text h1 {
+  color: rgb(0, 0, 0);
 }

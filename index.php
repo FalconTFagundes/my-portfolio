@@ -9,6 +9,9 @@
   <!-- link font Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- link font Raleway  -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
   <!-- boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -24,40 +27,83 @@
 <body>
   <header class="container-fluid" style="background-color: black;">
     <div class="container text-center" style="background-color: black;">
-      <nav class="d-flex align-items-center justify-content-between p-3">
-
+      <nav class="navbar navbar-expand-lg navbar-dark p-2">
         <a class="navbar-brand" href="#">
-          <img src="img/falconImg.png" alt="FalconTFagundes" height="120" width="120">
+          <img src="img/falconImg.png" alt="FalconTFagundes" height="70" width="70">
         </a>
-
-        <ul class="list-unstyled d-flex text-light align-items-center m-0">
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#sobre">SOBRE</a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#projetos">PROJETOS</a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#serviços">SERVIÇOS</a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#contato">CONTATO</a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#linkedin"><i
-                class='bx bxl-linkedin fs-1'></i></a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#instagram"><i
-                class='bx bxl-instagram fs-1'></i></a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#github"><i
-                class='bx bxl-github fs-1'></i></a></li>
-          <li class="ms-5"><a class="text-decoration-none navTitles" href="#facebook"><i
-                class='bx bxl-facebook fs-1'></i></a></li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto p-2">
+            <li class="nav-item ms-4">
+              <a class="navTitles" href="#sobre">SOBRE</a>
+            </li>
+            <li class="nav-item ms-4"> 
+              <a class="navTitles" href="#projetos">PROJETOS</a>
+            </li>
+            <li class="nav-item ms-4"> 
+              <a class="navTitles" href="#serviços">SERVIÇOS</a>
+            </li>
+            <li class="nav-item ms-4"> 
+              <a class="navTitles" href="#contato">CONTATO</a>
+            </li>
+            <li class="nav-item ms-5"> 
+              <a class="navTitles" href="https://www.linkedin.com/in/rafael-fagundes-518974258" target="_blank">
+                <i class='bx bxl-linkedin fs-2'></i>
+              </a>
+            </li>
+            <li class="nav-item ms-2"> 
+              <a class="navTitles" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank">
+                <i class='bx bxl-instagram fs-2'></i>
+              </a>
+            </li>
+            <li class="nav-item ms-2"> 
+              <a class="navTitles" href="https://github.com/FalconTFagundes" target="_blank">
+                <i class='bx bxl-github fs-2'></i>
+              </a>
+            </li>
+            <li class="nav-item ms-2"> 
+              <a class="navTitles" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank">
+                <i class='bx bxl-facebook fs-2'></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
+
+
     </div>
   </header>
 
 
-<div class="hero-section">
-    <div class="hero-image">
-        <img src="img/rafaelFagundes.png" alt="Rafael Fagundes">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="hero-section">
+          <div class="hero-text text-center">
+            <h1 class="fs-1 fs-md-3">
+              <span style="color: gray;">
+                < </span> Olá! Sou Rafael Fagundes <span style="color: gray;"> > </span>
+            </h1>
+            <p>Mais do que código, sou apaixonado por resolver problemas e contribuir para soluções que melhoram a vida
+              das pessoas.</p>
+          </div>
+          <div class="hero-image">
+            <img src="img/rafaelFagundes.png" alt="Rafael Fagundes" class="img-fluid">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="hero-text">
-        <h1>Olá, eu sou Rafael Fagundes</h1>
-        <p>Desenvolvedor e apaixonado por tecnologia</p>
-    </div>
-</div>
+  </div>
+
+
+
+
+
+
+
 
 
 
