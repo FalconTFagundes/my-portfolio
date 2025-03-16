@@ -59,11 +59,16 @@ header {
 
 }
 
-#linhaImgCentral{
-animation: fadeLado 4s ease-in-out;
-background-color: rgba(0, 0, 0, 0.3);
-
+.shadow-custom{
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2); /* Aumenta o desfoque e move a sombra para baixo */
 }
+
+
+#linhaImgCentral{
+  animation: fadeLado 4s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.3);
+  
+  }
 
 
 
@@ -91,4 +96,44 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .hero-text h1 {
   color: rgb(0, 0, 0);
+}
+
+
+footer {
+  background-color: rgb(247, 245, 245);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 30px 15px;
+
+}
+
+footer .social-links {
+  display: flex;
+  color: rgb(151, 151, 151);
+  text-decoration: none;
+  transition-duration: 0.3s;
+
+ 
+}
+
+footer .social-links:hover{
+  color: rgb(0, 0, 0);
+  transition-duration: 0.3s;
+}
+
+footer p {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(151, 151, 151);
+  width: 40%;
+}
+
+.footer-contet{
+  margin-left: 30vh;
+}
+
+#social-links-id{
+  margin-right: 30vh;
+
 }

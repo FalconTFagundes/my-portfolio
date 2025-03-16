@@ -80,50 +80,56 @@
     </div>
   </header>
 
+  <div class="container-fluid shadow-custom">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="hero-section">
+            <div class="hero-text text-center" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="1000">
+              <h1 class="fs-1 fs-md-3">
+                <span style="color: gray;">
+                  < </span> Olá! Sou Rafael Fagundes <span style="color: gray;"> > </span>
+              </h1>
+              <p>Mais do que código, sou apaixonado por resolver problemas e contribuir para soluções que melhoram a
+                vida
+                das pessoas.</p>
+              <span class="badge" style="color:rgb(126, 108, 247); background-color: white;"><i
+                  class='bx bxl-php fs-2'></i></span>
+              <span class="badge" style="color:rgb(89, 164, 224); background-color: white;"><i
+                  class='bx bxl-jquery fs-2'></i></span>
+              <span class="badge" style="color: purple; background-color: white;"><i
+                  class='bx bxl-bootstrap fs-2'></i></span>
+              <span class="badge" style="color:rgb(81, 109, 134); background-color: white;"><i
+                  class='bx bxs-data fs-2'></i></span>
+              <span class="badge" style="color:rgb(231, 65, 0); background-color: white;"><i
+                  class='bx bxl-git fs-2'></i></span>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <div class="hero-section">
-          <div class="hero-text text-center" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="1000">
-            <h1 class="fs-1 fs-md-3">
-              <span style="color: gray;">
-                < </span> Olá! Sou Rafael Fagundes <span style="color: gray;"> > </span>
-            </h1>
-            <p>Mais do que código, sou apaixonado por resolver problemas e contribuir para soluções que melhoram a vida
-              das pessoas.</p>
-              <span class="badge" style="color:rgb(126, 108, 247); background-color: white;"><i class='bx bxl-php fs-2'></i></span>
-              <span class="badge" style="color:rgb(89, 164, 224); background-color: white;"><i class='bx bxl-jquery fs-2'></i></span>
-              <span class="badge" style="color: purple; background-color: white;"><i class='bx bxl-bootstrap fs-2'></i></span>
-              <span class="badge" style="color:rgb(81, 109, 134); background-color: white;"><i class='bx bxs-data fs-2'></i></span>
-              <span class="badge" style="color:rgb(231, 65, 0); background-color: white;"><i class='bx bxl-git fs-2'></i></span>
-           
-        
-          </div>
-          <div class="hero-image" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1050">
-            <img src="img/rafaelFagundes.png" alt="Rafael Fagundes" class="img-fluid">
+
+            </div>
+            <div class="hero-image" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1050">
+              <img src="img/rafaelFagundes.png" alt="Rafael Fagundes" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- linha que fica debaixo da apresentação inicial do site -->
-  <div class="card container-fluid" id="linhaImgCentral"> </div>
+
 
   <div class="container text-center mt-5">
-  <div class="row">
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
+    <div class="row">
+      <div class="col">
+        Column
+      </div>
+      <div class="col">
+        Column
+      </div>
+      <div class="col">
+        Column
+      </div>
     </div>
   </div>
-</div>
 
 
 
@@ -133,6 +139,27 @@
 
 
 
+  <!-- Footer -->
+  <footer class="text-justify ">
+    <div class="container">
+      <p class="footer-contet">&copy; 2025 Rafael Fagundes</p>
+    </div>
+    <!-- Ícones sociais -->
+    <div class="social-links" id="social-links-id">
+      <a class="social-links" href="https://www.linkedin.com/in/rafael-fagundes-518974258" target="_blank">
+        <i class='bx bxl-linkedin fs-2'></i>
+      </a>
+      <a class="social-links" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank">
+        <i class='bx bxl-instagram fs-2 ms-3'></i>
+      </a>
+      <a class="social-links" href="https://github.com/FalconTFagundes" target="_blank">
+        <i class='bx bxl-github fs-2 ms-3'></i>
+      </a>
+      <a class="social-links" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank">
+        <i class='bx bxl-facebook fs-2 ms-3'></i>
+      </a>
+    </div>
+  </footer>
 
 
   <!-- Linkk bootstrap js + popper -->
