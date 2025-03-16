@@ -92,6 +92,13 @@
             </h1>
             <p>Mais do que código, sou apaixonado por resolver problemas e contribuir para soluções que melhoram a vida
               das pessoas.</p>
+              <span class="badge" style="color:rgb(126, 108, 247); background-color: white;"><i class='bx bxl-php fs-2'></i></span>
+              <span class="badge" style="color:rgb(89, 164, 224); background-color: white;"><i class='bx bxl-jquery fs-2'></i></span>
+              <span class="badge" style="color: purple; background-color: white;"><i class='bx bxl-bootstrap fs-2'></i></span>
+              <span class="badge" style="color:rgb(81, 109, 134); background-color: white;"><i class='bx bxs-data fs-2'></i></span>
+              <span class="badge" style="color:rgb(231, 65, 0); background-color: white;"><i class='bx bxl-git fs-2'></i></span>
+           
+        
           </div>
           <div class="hero-image" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1050">
             <img src="img/rafaelFagundes.png" alt="Rafael Fagundes" class="img-fluid">
