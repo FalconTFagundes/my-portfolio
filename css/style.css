@@ -1,3 +1,80 @@
+/* modo escuro */
+body.dark-mode {
+  background-color: #121212f3;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navTitles{
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode .navTitles:hover{
+    color: rgb(105, 105, 105) !important;
+
+}
+body.dark-mode header {
+  background-color: rgb(41, 41, 41) !important;
+}
+
+body.dark-mode header .container {
+  background-color: rgb(41, 41, 41) !important;
+}
+
+
+body.dark-mode nav{
+  background-color: rgb(41, 41, 41) !important;
+}
+
+
+body.dark-mode .navTitles:hover {
+  color: rgb(226, 226, 226);
+}
+
+body.dark-mode .hero-text {
+  color: rgb(133, 133, 133);
+
+}
+
+body.dark-mode .hero-text h1 {
+  color: rgb(158, 158, 158);
+}
+
+body.dark-mode .hero-text .spanCentral{
+  color: white !important;
+}
+
+body.dark-mode .custom-card{
+  background-color: rgb(41, 41, 41) !important;
+}
+
+body.dark-mode .card-title {
+ color: rgb(184, 184, 184) !important;
+}
+
+body.dark-mode .card-text {
+  color: rgb(184, 184, 184) !important;
+ }
+ 
+body.dark-mode .bx{
+  color: white;
+  transition-duration: 0.3s;
+}
+
+body.dark-mode .bx:hover{
+  color: gray;
+  transition-duration: 0.3s;
+}
+
+body.dark-mode footer{
+  background-color: rgb(41, 41, 41) !important;
+}
+
+body.dark-mode footer .social-links:hover{
+  color: white;
+}
+
+/* fim modo escuro */
+
 @keyframes fadeDescendo {
   from {
     opacity: 0;
@@ -36,6 +113,8 @@ header {
   font-family: 'Montserrat', sans-serif;
 }
 
+
+
 .navTitles:hover {
   color: rgb(146, 142, 142);
 }
@@ -68,14 +147,6 @@ header {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   border-radius: 2vh;
 }
-
-
-#linhaImgCentral{
-  animation: fadeLado 4s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.3);
-  
-  }
-
 
 
 .hero-image {

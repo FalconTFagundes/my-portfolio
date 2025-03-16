@@ -72,6 +72,10 @@
                 <i class='bx bxl-facebook fs-2'></i>
               </a>
             </li>
+            <li>
+              <button id="toggle-dark-mode">Alternar Modo Escuro</button>
+
+            </li>
           </ul>
         </div>
       </nav>
@@ -87,19 +91,22 @@
           <div class="hero-section">
             <div class="hero-text text-center" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="1000">
               <h1 class="fs-1 fs-md-3">
-                <span style="color: gray;">
-                  < </span> A chave para o <span style="background-color: rgba(66, 66, 66, 0.73); padding: 0 6px; color: white;">sucesso do seu projeto</span> está no código que escrevo <span style="color: gray;"> > </span>
+                <span class="spanCentral" style="color: gray;">
+                  < </span> A chave para o <span
+                      style="background-color: rgba(66, 66, 66, 0.73); padding: 0 6px; color: white;">sucesso do seu
+                      projeto</span> está no código que escrevo <span class="spanCentral" style="color: gray;"> > </span>
               </h1>
-              <p class="fs-5">Olá! Sou Rafael Fagundes, desenvolvedor web. Transformo ideias em soluções digitais que fazem a diferença.</p>
-              <span class="badge" style="color:rgb(126, 108, 247); background-color: white;"><i
+              <p class="fs-5">Olá! Sou Rafael Fagundes, desenvolvedor web. Transformo ideias em soluções digitais que
+                fazem a diferença.</p>
+              <span class="badge" style="color:rgb(126, 108, 247); background: none;"><i
                   class='bx bxl-php fs-2'></i></span>
-              <span class="badge" style="color:rgb(89, 164, 224); background-color: white;"><i
+              <span class="badge" style="color:rgb(89, 164, 224); background: none;"><i
                   class='bx bxl-jquery fs-2'></i></span>
-              <span class="badge" style="color: purple; background-color: white;"><i
+              <span class="badge" style="color: purple; background: none;"><i
                   class='bx bxl-bootstrap fs-2'></i></span>
-              <span class="badge" style="color:rgb(81, 109, 134); background-color: white;"><i
+              <span class="badge" style="color:rgb(81, 109, 134); background: none;"><i
                   class='bx bxs-data fs-2'></i></span>
-              <span class="badge" style="color:rgb(231, 65, 0); background-color: white;"><i
+              <span class="badge" style="color:rgb(231, 65, 0); background: none;"><i
                   class='bx bxl-git fs-2'></i></span>
 
             </div>
@@ -112,8 +119,8 @@
     </div>
   </div>
 
-  <p class="font-monospace fs-5 mt-5 text-center text-custom" data-aos="fade-up" data-aos-duration="1000"> PROJETOS
-    RECENTES </p>
+  <p class="font-monospace fs-5 mt-5 text-center text-custom" data-aos="fade-up" data-aos-duration="1000"> ÚLTIMOS
+    DESAFIOS </p>
 
   <!-- card projetos recentes -->
   <div class="container projetosRecentes text-center d-flex justify-content-center">
@@ -186,6 +193,8 @@
     </div>
   </footer>
 
+  <!-- MEU JS -->
+  <script src="js/func.js"></script>
 
   <!-- Linkk bootstrap js + popper -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
