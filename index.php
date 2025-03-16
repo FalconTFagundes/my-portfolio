@@ -115,10 +115,10 @@
   <p class="font-monospace fs-5 mt-5 text-center text-custom"> PROJETOS RECENTES </p>
 
   <!-- card projetos recentes -->
-  <div class="container projetosRecentes text-center mt-5">
+  <div class="container projetosRecentes text-center d-flex justify-content-center">
     <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
+      <div class="col g-5">
+        <div class="card custom-card" style="width: 18rem;">
           <img src="img/projects/divinoSabor.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Sistema de Gestão Epresarial</h5>
@@ -129,8 +129,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
+      <div class="col g-5">
+        <div class="card custom-card" style="width: 18rem;">
           <img src="img/projects/actionHeroes.PNG" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Dashboard - Loja Action Heroes</h5>
@@ -141,8 +141,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
+      <div class="col g-5">
+        <div class="card custom-card" style="width: 18rem;">
           <img src="img/projects/dashboardAjax.PNG" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Ferramenta de Gestão Visual</h5>
