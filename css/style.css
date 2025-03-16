@@ -176,3 +176,24 @@ footer p {
   color: rgb(116, 116, 116);
   transition-duration: 0.3s;
 }
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.badge {
+  display: inline-block;
+  animation: pulso 1.5s ease-in-out infinite;
+}
+
+
+
+
+

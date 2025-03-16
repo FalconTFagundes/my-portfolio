@@ -104,9 +104,8 @@
               <span class="badge" style="color:rgb(231, 65, 0); background-color: white;"><i
                   class='bx bxl-git fs-2'></i></span>
 
-
             </div>
-            <div class="hero-image" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1050">
+            <div class="hero-image moving-element" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1050">
               <img src="img/rafaelFagundes.png" alt="Rafael Fagundes" class="img-fluid">
             </div>
           </div>
@@ -115,13 +114,15 @@
     </div>
   </div>
 
-  <p class="font-monospace fs-5 mt-5 text-center text-custom" data-aos="fade-up" data-aos-duration="1000"> PROJETOS RECENTES </p>
-  
+  <p class="font-monospace fs-5 mt-5 text-center text-custom" data-aos="fade-up" data-aos-duration="1000"> PROJETOS
+    RECENTES </p>
+
   <!-- card projetos recentes -->
   <div class="container projetosRecentes text-center d-flex justify-content-center">
     <div class="row">
       <div class="col g-5">
-        <div class="card custom-card" style="width: 18rem;" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="300">
+        <div class="card custom-card" style="width: 18rem;" data-aos="zoom-out" data-aos-duration="2000"
+          data-aos-delay="300">
           <img src="img/projects/divinoSabor.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Sistema de Gestão Epresarial</h5>
@@ -133,7 +134,8 @@
         </div>
       </div>
       <div class="col g-5">
-        <div class="card custom-card" style="width: 18rem;" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="300">
+        <div class="card custom-card" style="width: 18rem;" data-aos="zoom-out" data-aos-duration="2000"
+          data-aos-delay="300">
           <img src="img/projects/actionHeroes.PNG" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Dashboard - Loja Action Heroes</h5>
@@ -145,7 +147,8 @@
         </div>
       </div>
       <div class="col g-5">
-        <div class="card custom-card" style="width: 18rem;" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="300">
+        <div class="card custom-card" style="width: 18rem;" data-aos="zoom-out" data-aos-duration="2000"
+          data-aos-delay="300">
           <img src="img/projects/dashboardAjax.PNG" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Ferramenta de Gestão Visual</h5>
@@ -193,6 +196,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+
+  <!-- anime js -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
 
   <!-- AOS Animation JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
