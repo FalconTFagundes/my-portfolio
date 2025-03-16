@@ -9,9 +9,6 @@
   <!-- link font Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- link font Raleway  -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-
   <!-- boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -115,25 +112,49 @@
     </div>
   </div>
 
+  <p class="font-monospace fs-5 mt-5 text-center text-custom"> PROJETOS RECENTES </p>
 
-
-  <div class="container text-center mt-5">
+  <!-- card projetos recentes -->
+  <div class="container projetosRecentes text-center mt-5">
     <div class="row">
       <div class="col">
-        Column
+        <div class="card" style="width: 18rem;">
+          <img src="img/projects/divinoSabor.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sistema de Gestão Epresarial</h5>
+            <p class="card-text">Gestão eficiente com layout intuitivo, PHP e Ajax.</p>
+            <a href="https://github.com/FalconTFagundes/tcc-DivinoSabor" target="_blank">
+              <i class='bx bxl-github fs-1'></i>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="col">
-        Column
+        <div class="card" style="width: 18rem;">
+          <img src="img/projects/actionHeroes.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dashboard - Loja Action Heroes</h5>
+            <p class="card-text">Controle fácil de recursos, imagens e vendas.</p>
+            <a href="https://github.com/FalconTFagundes/actionHeroes-AND-dashboard" target="_blank">
+              <i class='bx bxl-github fs-1'></i>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="col">
-        Column
+        <div class="card" style="width: 18rem;">
+          <img src="img/projects/dashboardAjax.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ferramenta de Gestão Visual</h5>
+            <p class="card-text">Interface simples para administração de sites.</p>
+            <a href="https://github.com/FalconTFagundes/AJAX-Dashboard" target="_blank">
+              <i class='bx bxl-github fs-1'></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-
-
-
 
 
 
