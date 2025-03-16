@@ -14,6 +14,7 @@
   from {
     opacity: 0;
     transform: translateX(-500px);
+    
   }
 
   to {
@@ -51,12 +52,20 @@ header {
 .hero-section {
   display: flex;
   align-items: center;
-  height: 600px;
+  height: 490px;
   padding: 0 8%;
   overflow: hidden;
+  margin-top: 4rem; 
 
-  
 }
+
+#linhaImgCentral{
+animation: fadeLado 4s ease-in-out;
+background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+
 
 .hero-image {
   flex: 1;
@@ -71,6 +80,7 @@ header {
   height: 100%;
   object-fit: cover;
   transform: scale(1.4);
+
 }
 
 .hero-text {

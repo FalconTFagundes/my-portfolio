@@ -84,7 +84,7 @@
   <div class="container text-center">
     <div class="row">
       <div class="col">
-        <div class="hero-section" >
+        <div class="hero-section">
           <div class="hero-text text-center" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="1000">
             <h1 class="fs-1 fs-md-3">
               <span style="color: gray;">
@@ -101,8 +101,22 @@
     </div>
   </div>
 
+  <!-- linha que fica debaixo da apresentação inicial do site -->
+  <div class="card container-fluid" id="linhaImgCentral"> </div>
 
-
+  <div class="container text-center mt-5">
+  <div class="row">
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+</div>
 
 
 
@@ -129,7 +143,7 @@
   <script>
     AOS.init();
   </script>
-  
+
 </body>
 
 </html>
