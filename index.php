@@ -72,9 +72,8 @@
                 <i class='bx bxl-facebook fs-2'></i>
               </a>
             </li>
-            <li>
-              <button id="toggle-dark-mode">Alternar Modo Escuro</button>
-
+            <li class="nav-item ms-5">
+              <i id="toggle-dark-mode" class='bx bxs-brightness-half fs-2 navTitles'></i>
             </li>
           </ul>
         </div>
@@ -133,7 +132,7 @@
             <h5 class="card-title">Sistema de Gestão Epresarial</h5>
             <p class="card-text">Gestão eficiente com layout intuitivo, PHP e Ajax.</p>
             <a href="https://github.com/FalconTFagundes/tcc-DivinoSabor" target="_blank">
-              <i class='bx bxl-github fs-1'></i>
+              <i class='bx bxl-github fs-1 gitCard'></i>
             </a>
           </div>
         </div>
@@ -146,7 +145,7 @@
             <h5 class="card-title">Dashboard - Loja Action Heroes</h5>
             <p class="card-text">Controle fácil de recursos, imagens e vendas.</p>
             <a href="https://github.com/FalconTFagundes/actionHeroes-AND-dashboard" target="_blank">
-              <i class='bx bxl-github fs-1'></i>
+              <i class='bx bxl-github fs-1 gitCard'></i>
             </a>
           </div>
         </div>
@@ -159,7 +158,7 @@
             <h5 class="card-title">Ferramenta de Gestão Visual</h5>
             <p class="card-text">Interface simples para administração de sites.</p>
             <a href="https://github.com/FalconTFagundes/AJAX-Dashboard" target="_blank">
-              <i class='bx bxl-github fs-1'></i>
+              <i class='bx bxl-github fs-1 gitCard'></i>
             </a>
           </div>
         </div>

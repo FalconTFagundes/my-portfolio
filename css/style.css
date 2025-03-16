@@ -55,12 +55,12 @@ body.dark-mode .card-text {
   color: rgb(184, 184, 184) !important;
  }
  
-body.dark-mode .bx{
+body.dark-mode .gitCard{
   color: white;
   transition-duration: 0.3s;
 }
 
-body.dark-mode .bx:hover{
+body.dark-mode .gitCard:hover{
   color: gray;
   transition-duration: 0.3s;
 }
