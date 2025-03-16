@@ -47,7 +47,7 @@
               <a class="navTitles" href="#projetos">PROJETOS</a>
             </li>
             <li class="nav-item ms-4">
-              <a class="navTitles" href="#serviços">SERVIÇOS</a>
+              <a class="navTitles" href="#serviços">CERTIFICAÇÕES</a>
             </li>
             <li class="nav-item ms-4">
               <a class="navTitles" href="#contato">CONTATO</a>
@@ -90,9 +90,7 @@
                 <span style="color: gray;">
                   < </span> Olá! Sou Rafael Fagundes <span style="color: gray;"> > </span>
               </h1>
-              <p>Mais do que código, sou apaixonado por resolver problemas e contribuir para soluções que melhoram a
-                vida
-                das pessoas.</p>
+              <p class="fs-4">A chave para o <span style="background-color: rgba(66, 66, 66, 0.73); padding: 0 6px; color: white;">sucesso do seu projeto</span> está no código que escrevo,</p>
               <span class="badge" style="color:rgb(126, 108, 247); background-color: white;"><i
                   class='bx bxl-php fs-2'></i></span>
               <span class="badge" style="color:rgb(89, 164, 224); background-color: white;"><i
