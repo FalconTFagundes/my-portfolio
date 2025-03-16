@@ -104,7 +104,7 @@ header {
   flex: 1;
   margin-right: 1%;
   color: rgb(122, 122, 122);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .hero-text h1 {
@@ -160,6 +160,10 @@ footer p {
   height: 30vh; 
   width: auto;
   object-fit:contain; 
+}
+
+.projetosRecentes{
+  font-family: 'Roboto', sans-serif;
 }
 
 .projetosRecentes a{

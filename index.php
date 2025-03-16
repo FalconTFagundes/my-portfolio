@@ -9,6 +9,9 @@
   <!-- link font Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- link font roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <!-- boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -112,13 +115,13 @@
     </div>
   </div>
 
-  <p class="font-monospace fs-5 mt-5 text-center text-custom"> PROJETOS RECENTES </p>
-
+  <p class="font-monospace fs-5 mt-5 text-center text-custom" data-aos="fade-up" data-aos-duration="1000"> PROJETOS RECENTES </p>
+  
   <!-- card projetos recentes -->
   <div class="container projetosRecentes text-center d-flex justify-content-center">
     <div class="row">
       <div class="col g-5">
-        <div class="card custom-card" style="width: 18rem;">
+        <div class="card custom-card" style="width: 18rem;" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="300">
           <img src="img/projects/divinoSabor.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Sistema de Gestão Epresarial</h5>
@@ -130,7 +133,7 @@
         </div>
       </div>
       <div class="col g-5">
-        <div class="card custom-card" style="width: 18rem;">
+        <div class="card custom-card" style="width: 18rem;" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="300">
           <img src="img/projects/actionHeroes.PNG" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Dashboard - Loja Action Heroes</h5>
@@ -142,7 +145,7 @@
         </div>
       </div>
       <div class="col g-5">
-        <div class="card custom-card" style="width: 18rem;">
+        <div class="card custom-card" style="width: 18rem;" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="300">
           <img src="img/projects/dashboardAjax.PNG" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Ferramenta de Gestão Visual</h5>
