@@ -88,9 +88,9 @@
             <div class="hero-text text-center" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="1000">
               <h1 class="fs-1 fs-md-3">
                 <span style="color: gray;">
-                  < </span> Olá! Sou Rafael Fagundes <span style="color: gray;"> > </span>
+                  < </span> A chave para o <span style="background-color: rgba(66, 66, 66, 0.73); padding: 0 6px; color: white;">sucesso do seu projeto</span> está no código que escrevo <span style="color: gray;"> > </span>
               </h1>
-              <p class="fs-4">A chave para o <span style="background-color: rgba(66, 66, 66, 0.73); padding: 0 6px; color: white;">sucesso do seu projeto</span> está no código que escrevo,</p>
+              <p class="fs-5">Olá! Sou Rafael Fagundes, desenvolvedor web. Transformo ideias em soluções digitais que fazem a diferença.</p>
               <span class="badge" style="color:rgb(126, 108, 247); background-color: white;"><i
                   class='bx bxl-php fs-2'></i></span>
               <span class="badge" style="color:rgb(89, 164, 224); background-color: white;"><i
