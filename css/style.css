@@ -154,10 +154,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(209,209,209);
-  background: linear-gradient(90deg, rgb(196, 196, 196) 0%, rgb(82, 82, 82) 100%);
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 
 }

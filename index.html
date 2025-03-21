@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="dark-mode">
   <header class="container-fluid" style="background-color: black;">
     <div class="container text-center" style="background-color: black;">
       <nav class="navbar navbar-expand-lg navbar-dark p-2">
@@ -41,34 +41,34 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto p-2">
             <li class="nav-item ms-4">
-              <a class="navTitles" href="#sobre">SOBRE</a>
+              <a class="navTitles" href="#sobre" onclick="erroDisabledButton()">SOBRE MIM</a>
             </li>
             <li class="nav-item ms-4">
-              <a class="navTitles" href="#projetos">PROJETOS</a>
+              <a class="navTitles" href="#projetos" onclick="erroDisabledButton()">PROJETOS</a>
             </li>
             <li class="nav-item ms-4">
-              <a class="navTitles" href="#serviços">CERTIFICAÇÕES</a>
+              <a class="navTitles" href="#serviços" onclick="erroDisabledButton()">FORMAÇÃO</a>
             </li>
             <li class="nav-item ms-4">
-              <a class="navTitles" href="#contato">CONTATO</a>
+              <a class="navTitles" href="#contato" onclick="erroDisabledButton()">CONTATO</a>
             </li>
             <li class="nav-item ms-5">
-              <a class="navTitles" href="https://www.linkedin.com/in/rafael-fagundes-518974258" target="_blank">
+              <a class="navTitles" href="https://www.linkedin.com/in/rafael-fagundes-518974258" target="_blank" onclick="successTransition('Linkedin', event)">
                 <i class='bx bxl-linkedin fs-2'></i>
               </a>
             </li>
             <li class="nav-item ms-2">
-              <a class="navTitles" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank">
+              <a class="navTitles " href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank" onclick="successTransition('Instagram', event)">
                 <i class='bx bxl-instagram fs-2'></i>
               </a>
             </li>
             <li class="nav-item ms-2">
-              <a class="navTitles" href="https://github.com/FalconTFagundes" target="_blank">
+              <a class="navTitles" href="https://github.com/FalconTFagundes" target="_blank"  onclick="successTransition('Github', event)">
                 <i class='bx bxl-github fs-2'></i>
               </a>
             </li>
             <li class="nav-item ms-2">
-              <a class="navTitles" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank">
+              <a class="navTitles" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank"  onclick="successTransition('Facebook', event)">
                 <i class='bx bxl-facebook fs-2'></i>
               </a>
             </li>
@@ -90,9 +90,10 @@
           <div class="hero-section">
             <div class="hero-text text-center" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="1000">
               <h1 class="fs-1 fs-md-3">
-                <span class="spanCentral" style="color: gray;"> < </span> A chave para o <span
+                <span class="spanCentral" style="color: gray;">                  < </span> A chave para o <span
                       style="background-color: rgba(66, 66, 66, 0.73); padding: 0 6px; color: white;">sucesso do seu
-                      projeto</span> está no código que escrevo <span class="spanCentral" style="color: gray;"> > </span>
+                      projeto</span> está no código que escrevo <span class="spanCentral" style="color: gray;"> >
+                    </span>
               </h1>
               <p class="fs-5">Olá! Sou Rafael Fagundes, desenvolvedor web. Transformo ideias em soluções digitais que
                 fazem a diferença.</p>
@@ -100,8 +101,7 @@
                   class='bx bxl-php fs-2'></i></span>
               <span class="badge" style="color:rgb(89, 164, 224); background: none;"><i
                   class='bx bxl-jquery fs-2'></i></span>
-              <span class="badge" style="color: purple; background: none;"><i
-                  class='bx bxl-bootstrap fs-2'></i></span>
+              <span class="badge" style="color: purple; background: none;"><i class='bx bxl-bootstrap fs-2'></i></span>
               <span class="badge" style="color:rgb(81, 109, 134); background: none;"><i
                   class='bx bxs-data fs-2'></i></span>
               <span class="badge" style="color:rgb(231, 65, 0); background: none;"><i
@@ -109,7 +109,7 @@
 
             </div>
             <div class="hero-image moving-element" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1050">
-              <img src="img/rafaelFagundes.jpg" alt="Rafael Fagundes" class="img-fluid">
+              <img src="img/rafaelFagundes.png" alt="Rafael Fagundes" class="img-fluid">
             </div>
           </div>
         </div>
@@ -127,8 +127,7 @@
         <div class="card custom-card" style="width: 18rem;" data-aos="zoom-out" data-aos-duration="2000"
           data-aos-delay="300">
           <img src="img/projects/divinoSabor.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sistema de Gestão Epresarial</h5>
+          <div class="card-body">            <h5 class="card-title">Sistema de Gestão Epresarial</h5>
             <p class="card-text">Gestão eficiente com layout intuitivo, PHP e Ajax.</p>
             <a href="https://github.com/FalconTFagundes/tcc-DivinoSabor" target="_blank">
               <i class='bx bxl-github fs-1 gitCard'></i>
@@ -176,16 +175,16 @@
     </div>
     <!-- Ícones sociais -->
     <div class="social-links" id="social-links-id">
-      <a class="social-links" href="https://www.linkedin.com/in/rafael-fagundes-518974258" target="_blank">
+      <a class="social-links" href="https://www.linkedin.com/in/rafael-fagundes-518974258" target="_blank" onclick="successTransition('Linkedin', event)">
         <i class='bx bxl-linkedin fs-2'></i>
       </a>
-      <a class="social-links" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank">
+      <a class="social-links" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank" onclick="successTransition('Instagram', event)">
         <i class='bx bxl-instagram fs-2 ms-3'></i>
       </a>
-      <a class="social-links" href="https://github.com/FalconTFagundes" target="_blank">
+      <a class="social-links" href="https://github.com/FalconTFagundes" target="_blank" onclick="successTransition('Github', event)">
         <i class='bx bxl-github fs-2 ms-3'></i>
       </a>
-      <a class="social-links" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank">
+      <a class="social-links" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank" onclick="successTransition('Facebook', event)">
         <i class='bx bxl-facebook fs-2 ms-3'></i>
       </a>
     </div>
@@ -202,9 +201,8 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
 
-  <!-- anime js -->
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-
+  <!-- sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- AOS Animation JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
