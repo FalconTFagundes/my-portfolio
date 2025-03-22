@@ -87,6 +87,17 @@ body.dark-mode footer .social-links:hover{
   }
 }
 
+@keyframes fadeSubindo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(-120px);
+  }
+}
+
 @keyframes fadeLado {
   from {
     opacity: 0;
@@ -101,7 +112,7 @@ body.dark-mode footer .social-links:hover{
 }
 
 header {
-  animation: fadeDescendo 2s ease;
+  animation: fadeDescendo 2s ease /* forwards para quando subir ele ficar congelado */;
   
 }
 

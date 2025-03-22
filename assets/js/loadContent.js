@@ -1,17 +1,24 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // carregando o header
-    fetch("components/header.html")
+    // Determinar o caminho com base no diretório atual
+    const pathToComponents = window.location.pathname.includes("/pages/") ? "../components/" : "components/";
+
+    // Carregar o header
+    fetch(pathToComponents + "header.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("header").innerHTML = data;
+            document.querySelectorAll(".header").forEach(element => {
+                element.innerHTML = data;
+            });
         })
         .catch(error => console.error("Erro ao carregar o header:", error));
 
-    // carregando o footer
-    fetch("components/footer.html")
+    // Carregar o footer
+    fetch(pathToComponents + "footer.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("footer").innerHTML = data;
+            document.querySelectorAll(".footer").forEach(element => {
+                element.innerHTML = data;
+            });
         })
         .catch(error => console.error("Erro ao carregar o footer:", error));
 });
