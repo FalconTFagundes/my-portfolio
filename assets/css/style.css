@@ -87,16 +87,6 @@ body.dark-mode footer .social-links:hover{
   }
 }
 
-@keyframes fadeSubindo {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(-120px);
-  }
-}
 
 @keyframes fadeLado {
   from {
@@ -111,10 +101,13 @@ body.dark-mode footer .social-links:hover{
   }
 }
 
+
 header {
-  animation: fadeDescendo 2s ease /* forwards para quando subir ele ficar congelado */;
+  animation: fadeDescendo 2s ease;
   
 }
+
+
 
 .navTitles {
   color: rgb(255, 255, 255);
