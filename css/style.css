@@ -102,6 +102,7 @@ body.dark-mode footer .social-links:hover{
 
 header {
   animation: fadeDescendo 2s ease;
+  
 }
 
 .navTitles {
@@ -147,6 +148,7 @@ header {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   border-radius: 2vh;
 }
+
 
 
 .hero-image {
@@ -260,6 +262,7 @@ footer p {
   display: inline-block;
   animation: pulso 1.5s ease-in-out infinite;
 }
+
 
 
 
