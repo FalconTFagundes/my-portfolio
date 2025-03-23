@@ -273,7 +273,7 @@ footer p {
 
 /* RESPONSIVIDADE MOBILE */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   nav img {
     height: 60px !important;
@@ -322,11 +322,24 @@ footer p {
   }
 
   .footer-contet {
-    width: 270px;
+    width: 230px;
     margin-left: 0;
     font-size: small;
-    margin-right: 0
+    justify-content: center;
   }
   
 
+}
+
+@media (max-width: 1366){
+  .footer-contet {
+    width: 250px;
+    margin-left: 0;
+    font-size: small;
+    justify-content: center;
+    
+  }
+
+  
+  
 }
