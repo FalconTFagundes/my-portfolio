@@ -322,9 +322,10 @@ footer p {
   }
 
   .footer-contet {
-    width: 250px;
+    width: 270px;
     margin-left: 0;
     font-size: small;
+    margin-right: 0
   }
   
 
