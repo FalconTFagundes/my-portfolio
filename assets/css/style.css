@@ -271,6 +271,10 @@ footer p {
 
 /* guia recursos úteis */
 
+#containerRecursos{
+  margin-bottom: 4rem;
+}
+
 #textoRecursos {
   text-align: right;
   font-family: 'Roboto', sans-serif;
