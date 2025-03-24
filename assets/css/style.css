@@ -1,82 +1,3 @@
-/* modo escuro - DESABILITADO */
-
-/* body.dark-mode {
-  background-color: #121212f3;
-  color: #e0e0e0;
-}
-
-body.dark-mode .navTitles {
-  color: rgb(255, 255, 255);
-}
-
-body.dark-mode .navTitles:hover {
-  color: rgb(105, 105, 105) !important;
-
-}
-
-body.dark-mode header {
-  background-color: rgb(41, 41, 41) !important;
-}
-
-body.dark-mode header .container {
-  background-color: rgb(41, 41, 41) !important;
-}
-
-
-body.dark-mode nav {
-  background-color: rgb(41, 41, 41) !important;
-}
-
-
-body.dark-mode .navTitles:hover {
-  color: rgb(226, 226, 226);
-}
-
-body.dark-mode .hero-text {
-  color: rgb(133, 133, 133);
-
-}
-
-body.dark-mode .hero-text h1 {
-  color: rgb(158, 158, 158);
-}
-
-body.dark-mode .hero-text .spanCentral {
-  color: white !important;
-}
-
-body.dark-mode .custom-card {
-  background-color: rgb(41, 41, 41) !important;
-}
-
-body.dark-mode .card-title {
-  color: rgb(184, 184, 184) !important;
-}
-
-body.dark-mode .card-text {
-  color: rgb(184, 184, 184) !important;
-}
-
-body.dark-mode .gitCard {
-  color: white;
-  transition-duration: 0.3s;
-}
-
-body.dark-mode .gitCard:hover {
-  color: gray;
-  transition-duration: 0.3s;
-}
-
-body.dark-mode footer {
-  background-color: rgb(41, 41, 41) !important;
-}
-
-body.dark-mode footer .social-links:hover {
-  color: white;
-} */
-
-/* fim modo escuro */
-
 @keyframes fadeDescendo {
   from {
     opacity: 0;
@@ -299,14 +220,30 @@ footer p {
 .cardRecursos {
   transition: 0.5s !important;
   font-family: 'Roboto', sans-serif;
+  border-radius: 1%
 
 }
 
 .cardRecursos:hover {
-  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3) !important;
   transition: 0.5s !important;
+  transform: translateY(-5px) !important;
 
 }
+
+
+.card-title{
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.card-body{
+  color: rgb(116, 116, 116);
+  padding: 2rem;
+}
+
+
+
 
 
 /* aba contato  */
