@@ -334,8 +334,28 @@ footer p {
   border-color: #28a745 !important;
 }
 
+#textoContato i{
+  text-align: left;
+  font-size: 100px !important;
+  transition: 0.3s;
+}
 
+#textoContato i:hover{
+  transition: 0.3s;
+  transform: scale(1.3);
+  
+}
 
+.icon-instagram {
+  display: inline-block;
+  background: linear-gradient(200deg, #5133da, #913ab4, #eb3b7e, #ffb74b, #ff6e2b);
+  -webkit-background-clip: text; 
+  color: transparent; 
+}
+
+#textoContato a{
+  text-decoration: none;
+}
 
 
 

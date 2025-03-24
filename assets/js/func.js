@@ -3,14 +3,26 @@
 function sendToWhatsApp() {
   let message = document.getElementById("message").value.trim();
   let phoneNumber = "5533991414767"; // Substitua pelo seu número (código do país + número)
-  
+
   if (message === "") {
-      alert("Digite uma mensagem antes de enviar!");
-      return;
+    Swal.fire({
+      icon: "error",
+      title: "Mensagem Vazia",
+      text: "Digite alguma mensagem antes de enviar!"
+    });
+    return;
+  } else {
+    Swal.fire({
+      icon: "success",
+      title: "Enviando Mensagem..",
+      text: "Redirecionando você para o WhatsApp",
+      timer: 1500,
+    }).then(() => {
+      let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    });
   }
 
-  let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  window.open(url, "_blank");
 }
 
 function erroDisabledButton() {
@@ -21,20 +33,20 @@ function erroDisabledButton() {
   });
 }
 
-  function successTransition(destino, event) {
-    event.preventDefault();
+function successTransition(destino, event) {
+  event.preventDefault();
 
-    const linkDestino = event.currentTarget.getAttribute('href');
+  const linkDestino = event.currentTarget.getAttribute('href');
 
-    Swal.fire({
-      title: `Processando... Em instantes, você será redirecionado para o meu ${destino}`,
-      icon: "success",
-      draggable: true,
-      timer: 2000,
-      timerProgressBar: true, 
-      willClose: () => {
-      
-        window.open(linkDestino, '_blank');
-      }
-    });
-  }
+  Swal.fire({
+    title: `Processando.. você será redirecionado para o meu ${destino}`,
+    icon: "success",
+    draggable: true,
+    timer: 2000,
+    timerProgressBar: true,
+    willClose: () => {
+
+      window.open(linkDestino, '_blank');
+    }
+  });
+}
