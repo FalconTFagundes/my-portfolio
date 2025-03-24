@@ -269,7 +269,7 @@ footer p {
   animation: pulso 1.5s ease-in-out infinite;
 }
 
-/* guia recursos úteis */
+/* aba recursos úteis */
 
 #containerRecursos {
   margin-bottom: 4rem;
@@ -309,7 +309,7 @@ footer p {
 }
 
 
-/* guia contato  */
+/* aba contato  */
 
 #tituloContato{
   font-family: 'roboto', sans-serif;
@@ -328,8 +328,11 @@ footer p {
 }
 
 
-
-
+#message:focus{
+  outline: none;
+  box-shadow: none;
+  border-color: #28a745 !important;
+}
 
 
 
