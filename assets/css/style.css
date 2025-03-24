@@ -296,6 +296,32 @@ footer p {
 
 
 
+/* aba sobre mim */
+
+#rafaelAbout{
+  transform: scale(0.6);
+  box-shadow: 1px 1px 15px black;
+  border-radius: 2rem;
+}
+
+
+#tituloAbout{
+  font-family: 'roboto', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  font-size: 60px;
+}
+
+#textoAbout{
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
 /* RESPONSIVIDADE MOBILE */
 
 @media (max-width: 1024px) {
