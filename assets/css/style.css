@@ -147,7 +147,7 @@ header {
 .hero-section {
   display: flex;
   align-items: center;
-  height: 30rem;
+  height: 27.2rem;
   padding: 0 8%;
   overflow: hidden;
   margin-top: 4rem;
@@ -267,6 +267,20 @@ footer p {
   display: inline-block;
   animation: pulso 1.5s ease-in-out infinite;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
