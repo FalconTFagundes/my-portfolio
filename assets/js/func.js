@@ -1,4 +1,6 @@
-document.getElementById("toggle-dark-mode").addEventListener("click", function () {
+/* Modo escuro - Desabilitado */
+
+/* document.getElementById("toggle-dark-mode").addEventListener("click", function () {
 
   document.body.classList.toggle("dark-mode");
 
@@ -30,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     icon.classList.replace("bx-brightness-half", "bxs-brightness-half");
   }
 });
-
+ */
 
 function erroDisabledButton() {
   Swal.fire({

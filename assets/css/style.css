@@ -1,5 +1,6 @@
-/* modo escuro */
-body.dark-mode {
+/* modo escuro - DESABILITADO */
+
+/* body.dark-mode {
   background-color: #121212f3;
   color: #e0e0e0;
 }
@@ -72,7 +73,7 @@ body.dark-mode footer {
 
 body.dark-mode footer .social-links:hover {
   color: white;
-}
+} */
 
 /* fim modo escuro */
 
@@ -268,8 +269,19 @@ footer p {
   animation: pulso 1.5s ease-in-out infinite;
 }
 
+/* guia recursos úteis */
 
+#textoRecursos {
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+}
 
+#tituloRecursos {
+  font-family: 'roboto', sans-serif;
+  font-weight: bold;
+  text-align: right;
+  font-size: 60px;
+}
 
 
 
@@ -294,14 +306,14 @@ footer p {
     width: 60px !important;
   }
 
-  .nav-item{
+  .nav-item {
     margin: 0 !important;
     font-size: 30px !important;
     padding: 0px;
   }
 
-  .nav-item i{
-    font-size: 40px !important; 
+  .nav-item i {
+    font-size: 40px !important;
 
   }
 
@@ -332,7 +344,7 @@ footer p {
   }
 
   .projetosRecentes .row {
-    display: block; 
+    display: block;
   }
 
   .footer-contet {
@@ -341,19 +353,19 @@ footer p {
     font-size: small;
     justify-content: center;
   }
-  
+
 
 }
 
-@media (max-width: 1366){
+@media (max-width: 1366) {
   .footer-contet {
     width: 250px;
     margin-left: 0;
     font-size: small;
     justify-content: center;
-    
+
   }
 
-  
-  
+
+
 }
