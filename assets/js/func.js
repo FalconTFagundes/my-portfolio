@@ -50,3 +50,21 @@ function successTransition(destino, event) {
     }
   });
 }
+
+function successTransitionRecursos(destino, event){
+  event.preventDefault();
+
+  const linkDestino = event.currentTarget.getAttribute('href');
+
+  Swal.fire({
+    title: `Processando.. você será redirecionado para a página do ${destino}`,
+    icon: "success",
+    draggable: true,
+    timer: 2000,
+    timerProgressBar: true,
+    willClose: () => {
+
+      window.open(linkDestino, '_blank');
+    }
+  });
+}
