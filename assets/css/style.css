@@ -236,9 +236,10 @@ footer p {
   color: black;
 }
 
-.card-body {
+.cardsInit {
   color: rgb(116, 116, 116);
   padding: 2rem;
+  
 }
 
 
@@ -313,6 +314,21 @@ footer p {
 #textoAbout {
   text-align: left;
   font-family: 'Roboto', sans-serif;
+}
+
+
+.card-body-about {
+  color: rgb(116, 116, 116);
+  padding: 2rem;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+
 }
 
 .cardAbout {
@@ -397,6 +413,8 @@ footer p {
   line-height: 1.6;
   color: #555;
 }
+
+
 
 
 
