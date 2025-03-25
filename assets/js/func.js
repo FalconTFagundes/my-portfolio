@@ -68,3 +68,6 @@ function successTransitionRecursos(destino, event){
     }
   });
 }
+
+/* chart JS */
+
