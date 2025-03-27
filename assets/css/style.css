@@ -474,7 +474,8 @@ canvas {
 
 
   .hero-section {
-    height: 40rem;
+    height: 40rem !important;
+    background-color: red;
   
   }
   
