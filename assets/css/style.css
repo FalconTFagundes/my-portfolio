@@ -581,10 +581,6 @@ canvas {
 
   }
 
-  #textoRecursos {
-    font-size: 13px !important;
-
-  }
 
   #tituloRecursos {
     width: 11rem;
@@ -673,7 +669,9 @@ canvas {
   }
 
 
-
+  .hero-text p{
+    font-size: medium !important;
+  }
 
 }
 
