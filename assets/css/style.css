@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
 }
@@ -342,11 +343,12 @@ footer p {
   font-size: 60px;
 }
 
-#textoAbout {
+.textoAbout {
   text-align: justify;
   font-family: 'Roboto', sans-serif;
-}
 
+
+}
 
 .card-body-about {
   color: rgb(116, 116, 116);
@@ -590,7 +592,7 @@ canvas {
 
 
 
-  #textoAbout {
+  .textoAbout {
     font-size: 13px !important;
   }
 
@@ -662,6 +664,15 @@ canvas {
     order: 3 !important;
     width: 90% !important;
   }
+
+  .textoAbout {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+
+
+  }
+
+
 
 
 }
