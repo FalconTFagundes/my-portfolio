@@ -461,6 +461,7 @@ canvas {
 
 @media (max-width: 1024px) {
 
+  /* btn modal mobile - page sobre mim */
   .textoConteudoAbout {
     display: none !important;
   }
@@ -470,6 +471,15 @@ canvas {
     margin-top: 10px;
     margin: 20px auto; 
   }
+
+
+  .hero-section {
+    height: 40rem;
+  
+  }
+  
+
+
 
 
 
