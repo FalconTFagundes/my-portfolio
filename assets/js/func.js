@@ -69,9 +69,26 @@ function successTransitionRecursos(destino, event){
   });
 }
 
+
+function confirmDownloadCV(event) {
+  event.preventDefault(); 
+
+  Swal.fire({
+      title: "Baixar Currículo?",
+      text: "Deseja realmente fazer o download?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Sim, baixar",
+      cancelButtonText: "Cancelar"
+  }).then((result) => {
+      if (result.isConfirmed) {
+          window.location.href = event.target.href;
+      }
+  });
+}
+
 /* modal ver mais da aba SOBRE MIM */
 
-// Seleciona todos os botões "Ver mais"
 document.querySelectorAll(".btnVerMais").forEach(button => {
   button.addEventListener("click", function() {
     // Acha a modal correspondente ao botão clicado
@@ -82,14 +99,12 @@ document.querySelectorAll(".btnVerMais").forEach(button => {
   });
 });
 
-// Fecha a modal ao clicar no botão "x"
 document.querySelectorAll(".close-btn").forEach(button => {
   button.addEventListener("click", function() {
     this.closest(".modal").style.display = "none";
   });
 });
 
-// Fecha a modal ao clicar fora dela
 window.addEventListener("click", function(event) {
   document.querySelectorAll(".modal").forEach(modal => {
     if (event.target === modal) {

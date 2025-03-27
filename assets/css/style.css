@@ -327,6 +327,20 @@ footer p {
 }
 
 
+/* aba curriculo */
+
+#tituloCurriculo {
+  font-family: 'roboto', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+}
+
+#imgCurriculo {
+  transform: scale(1);
+}
+
+
 
 /* aba sobre mim */
 
@@ -669,7 +683,7 @@ canvas {
   }
 
 
-  .hero-text p{
+  .hero-text p {
     font-size: medium !important;
   }
 
