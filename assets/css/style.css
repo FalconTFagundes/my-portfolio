@@ -1,3 +1,9 @@
+body {
+  overflow-x: hidden;
+
+}
+
+
 @keyframes fadeDescendo {
   from {
     opacity: 0;
@@ -70,6 +76,7 @@ header {
   display: flex;
   align-items: center;
   height: 27.2rem;
+  gap: 30px;
   padding: 0 8%;
   overflow: hidden;
   margin-top: 4rem;
@@ -99,6 +106,7 @@ header {
   margin-right: 1%;
   color: rgb(122, 122, 122);
   font-family: 'Roboto', sans-serif;
+
 }
 
 .hero-text h1 {
@@ -151,10 +159,12 @@ footer p {
 }
 
 .card-img-top {
-  height: 30vh;
-  width: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+
 }
+
 
 .projetosRecentes {
   font-family: 'Roboto', sans-serif;
@@ -197,7 +207,8 @@ footer p {
 }
 
 #textoRecursos {
-  text-align: right;
+  text-align: justify;
+  gap: 30px;
   font-family: 'Roboto', sans-serif;
 
 }
@@ -205,12 +216,13 @@ footer p {
 #tituloRecursos {
   font-family: 'roboto', sans-serif;
   font-weight: bold;
-  text-align: right;
+  text-align: justify;
   font-size: 60px;
 }
 
 #imgRecurosUteis {
-  transform: scale(1.3);
+  transform: scale(0.6);
+
 }
 
 .linkCardRecursos {
@@ -251,12 +263,12 @@ footer p {
 #tituloContato {
   font-family: 'roboto', sans-serif;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   font-size: 60px;
 }
 
 #textoContato {
-  text-align: left;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -272,7 +284,7 @@ footer p {
 }
 
 #textoContato i {
-  text-align: left;
+  text-align: center;
   font-size: 70px !important;
   transition: 0.3s;
 }
@@ -312,7 +324,7 @@ footer p {
 }
 
 #textoAbout {
-  text-align: left;
+  text-align: justify;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -364,7 +376,7 @@ footer p {
   justify-content: left;
   margin-top: 5rem;
   padding: 2rem;
-  background-color: #f8f9fa;
+  background-color: #dbdbdb59;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -373,7 +385,8 @@ footer p {
   max-width: 30%;
   height: auto;
   display: block;
-  margin-right: 5rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
 }
@@ -418,6 +431,7 @@ footer p {
 
 .textoConteudoAbout {
   font-family: 'Roboto', sans-serif;
+  text-align: justify;
   font-size: 18px;
   line-height: 1.6;
   color: #555;
@@ -429,9 +443,35 @@ canvas {
 }
 
 
+
+
 /* RESPONSIVIDADE MOBILE */
 
+@media (min-width: 1025px) {
+
+  .textoConteudoAbout {
+    display: block !important;
+  }
+
+  .btnVerMais {
+    display: none !important;
+  }
+}
+
+
 @media (max-width: 1024px) {
+
+  .textoConteudoAbout {
+    display: none !important;
+  }
+
+  .btnVerMais {
+    display: block !important;
+    margin-top: 10px;
+    margin: 20px auto; 
+  }
+
+
 
   nav img {
     height: 60px !important;
@@ -488,28 +528,126 @@ canvas {
 
 
   #tituloContato {
-    width: 100%;
+    font-size: 30px !important;
     text-align: center;
 
   }
 
-  #textoContato{
+
+  #textoContato i {
+    font-size: 5rem !important;
+    justify-content: center !important;
+
+  }
+
+  #containerRecursos {
+    flex-wrap: nowrap !important;
+
+  }
+
+  #imgRecurosUteis {
+    transform: scale(1) !important;
+
+  }
+
+  #textoRecursos {
+    font-size: 13px !important;
+
+  }
+
+  #tituloRecursos {
+    width: 11rem;
+  }
+
+
+
+  #textoAbout {
+    font-size: 13px !important;
+  }
+
+
+  .rafaelAbout {
+    box-shadow: 1px 1px 5px black;
+  }
+
+  #aboutImg {
+    transform: scale(1.1) !important;
+  }
+
+  .imgConteudoAbout {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     text-align: center !important;
+    padding: 1rem !important;
   }
 
-  #textoContato i{
-    font-size: 3rem !important;
+  .imgConteudoAbout img {
+    margin-left: 0; 
+    margin-right: 0;
+    max-width: 100%; 
   }
 
-  @media (max-width: 1366) {
-    .footer-contet {
-      width: 250px;
-      margin-left: 0;
-      font-size: small;
-      justify-content: center;
+  .contentContainer {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
 
-    }
+  .imgContainer {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
 
+  .imgContainer img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    transform: scale(0.8) !important;
+  }
+
+  .titleConteudoAbout {
+    font-size: 1.6rem !important;
+    margin-bottom: 1rem !important;
+    word-wrap: break-word !important;
+    padding: 0 10px !important;
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+
+  .textoConteudoAbout {
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+    text-align: justify !important;
+    width: 300px !important;
+    box-sizing: border-box !important;
+  }
+
+  .contentContainer .textContainer {
+    order: 3 !important;
+    width: 90% !important;
+  }
+
+
+}
+
+
+@media (max-width: 1366) {
+  .footer-contet {
+    width: 250px;
+    margin-left: 0;
+    font-size: small;
+    justify-content: center;
 
   }
+
+
+
+
 }

@@ -108,8 +108,8 @@
 
                             <div class="hero-image moving-element" data-aos="fade-right" data-aos-duration="1500"
                                 data-aos-delay="2000">
-                                <img src="../assets/img/about/rafaelAbout.jpg" class="rafaelAbout" alt="Rafael Fagundes"
-                                    class="img-fluid">
+                                <img src="../assets/img/about/rafaelAbout.jpg" id="aboutImg" class="rafaelAbout"
+                                    alt="Rafael Fagundes" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -146,8 +146,8 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="imgConteudoAbout" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+        <div class="container-fluid">
+            <div class="imgConteudoAbout">
                 <div class="contentContainer">
                     <div class="imgContainer">
                         <img src="../assets/img/about/about_12.jpg" alt="estudo pesado" class="img-fluid">
@@ -156,25 +156,53 @@
                         <h1 class="titleConteudoAbout">Quem sou eu?</h1>
                         <p class="textoConteudoAbout fs-5">
                             Olá! Meu nome é Rafael Fagundes, e é um prazer tê-lo em meu portfólio. Atualmente, sou
-                            estudante de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em
-                            Desenvolvimento de Sistemas.
-                            Sou um jovem em constante busca pelo aperfeiçoamento profissional, sempre empenhado em
-                            expandir meus conhecimentos. Considero-me uma pessoa dedicada e atenta, enfrentando, e,
-                            superando rotinas intensas e desafiadoras entre estudos e trabalho.
-                            <br><br>
-                            Ao longo da minha trajetória, tive a oportunidade de integrar diversas turmas e estabelecer
-                            conexões valiosas com tutores em renomadas instituições de ensino, como SEST SENAT, SENAI,
-                            SENAC e VIA CERTA. Nessas experiências, fui reconhecido como um aluno diferenciado, servindo
-                            de referência e inspiração para meus colegas. Concluí o ensino médio em 2023 na Escola
-                            Estadual Prefeito Joaquim Pedro Nascimento, localizada em Governador Valadares, Minas
-                            Gerais, cidade onde resido atualmente.
+                            estudante
+                            de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em
+                            Desenvolvimento
+                            de Sistemas. Sou um jovem em constante busca pelo aperfeiçoamento profissional, sempre
+                            empenhado
+                            em
+                            expandir meus conhecimentos. Considero-me uma pessoa dedicada e atenta, enfrentando, e
+                            superando
+                            rotinas intensas e desafiadoras entre estudos e trabalho...
+                        </p>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
+                            data-bs-target="#modalQuemSou">
+                            Ver mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal quem sou p/ mobile -->
+        <div class="modal fade" id="modalQuemSou" tabindex="-1" aria-labelledby="modalQuemSou" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="modalQuemSou">Quem sou eu?</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Olá! Meu nome é Rafael Fagundes, e é um prazer tê-lo em meu portfólio. Atualmente, sou
+                            estudante
+                            de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em
+                            Desenvolvimento
+                            de Sistemas. Sou um jovem em constante busca pelo aperfeiçoamento profissional, sempre
+                            empenhado
+                            em expandir meus conhecimentos. Considero-me uma pessoa dedicada e atenta, enfrentando e
+                            superando
+                            rotinas intensas e desafiadoras entre estudos e trabalho...
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+
+
+        <div class="container-fluid">
             <div class="imgConteudoAbout" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
                 <div class="contentContainer">
                     <div class="textContainer">
@@ -182,17 +210,24 @@
                         <p class="textoConteudoAbout fs-5">
                             Meu maior objetivo é tornar-me professor de tecnologia, compartilhando conhecimento
                             e contribuindo para a formação de novos profissionais na área. Sempre fui
-                            apaixonado por aprender e ensinar, e acredito que a educação é o caminho para transformar
+                            apaixonado por aprender e ensinar, e acredito que a educação é o caminho para
+                            transformar
                             vidas e impulsionar o desenvolvimento profissional.
                             Busco constantemente aprimorar minhas habilidades técnicas e didáticas para oferecer um
-                            ensino de qualidade, baseado em prática e inovação. Com minha experiência em Desenvolvimento
-                            de Sistemas e minha trajetória acadêmica em Ciência da Computação, desejo capacitar futuros
+                            ensino de qualidade, baseado em prática e inovação. Com minha experiência em
+                            Desenvolvimento
+                            de Sistemas e minha trajetória acadêmica em Ciência da Computação, desejo capacitar
+                            futuros
                             profissionais, tornando a tecnologia mais acessível e compreensível para todos.
                             <br><br>
-                            Estou comprometido em evoluir continuamente, tanto como profissional quanto como educador,
+                            Estou comprometido em evoluir continuamente, tanto como profissional quanto como
+                            educador,
                             para fazer a diferença na vida de meus alunos e no mercado de tecnologia.
-
                         </p>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
+                            data-bs-target="#modalOndeQueroChegar">
+                            Ver mais
+                        </button>
                     </div>
                     <div class="imgContainer">
                         <img src="../assets/img/about/about_15.jpg" alt="Apresentação e explicação projeto divino sabor"
@@ -203,7 +238,39 @@
             </div>
         </div>
 
-        <div class="container">
+        <!-- Modal onde quero chegar p/ mobile -->
+        <div class="modal fade" id="modalOndeQueroChegar" tabindex="-1" aria-labelledby="modalOndeQueroChegar"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="modalOndeQueroChegar">Onde quero chegar?</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Meu maior objetivo é tornar-me professor de tecnologia, compartilhando conhecimento
+                            e contribuindo para a formação de novos profissionais na área. Sempre fui
+                            apaixonado por aprender e ensinar, e acredito que a educação é o caminho para
+                            transformar
+                            vidas e impulsionar o desenvolvimento profissional.
+                            Busco constantemente aprimorar minhas habilidades técnicas e didáticas para oferecer um
+                            ensino de qualidade, baseado em prática e inovação. Com minha experiência em
+                            Desenvolvimento
+                            de Sistemas e minha trajetória acadêmica em Ciência da Computação, desejo capacitar
+                            futuros
+                            profissionais, tornando a tecnologia mais acessível e compreensível para todos.
+                            <br><br>
+                            Estou comprometido em evoluir continuamente, tanto como profissional quanto como
+                            educador,
+                            para fazer a diferença na vida de meus alunos e no mercado de tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
             <div class="imgConteudoAbout" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
                 <div class="contentContainer">
                     <div class="imgContainer">
@@ -213,28 +280,71 @@
                         <h1 class="titleConteudoAbout">Pelo que já passei?</h1>
                         <p class="textoConteudoAbout fs-5">
                             Desde cedo, enfrentei rotinas desafiadoras que me ajudaram a desenvolver disciplina e
-                            resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a escola
+                            resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a
+                            escola
                             e, à tarde, conciliava trabalho e estudos no SEST SENAT. Sempre levava minha marmita na
-                            bolsa, o que nem sempre era fácil—às vezes, as condições do dia faziam com que a comida
+                            bolsa, o que nem sempre era fácil, às vezes, as condições do dia faziam com que a comida
                             azedasse, me ensinando a lidar com imprevistos e a me adaptar às circunstâncias.
                             <br><br>
-                            Após o trabalho ou o SEST SENAT, meu dia ainda estava longe de acabar. Às 18h, eu iniciava
+                            Após o trabalho ou o SEST SENAT, meu dia ainda estava longe de acabar. Às 18h, eu
+                            iniciava
                             as aulas no SENAI, onde cursava Técnico em Desenvolvimento de Sistemas até as 22h30. A
-                            escola ficava longe de casa, e, sem outro meio de transporte, eu fazia todo esse trajeto de
+                            escola ficava longe de casa, e, sem outro meio de transporte, eu fazia todo esse trajeto
+                            de
                             bicicleta, pedalando o dia inteiro. Quando finalmente chegava em casa, ainda precisava
-                            dedicar tempo aos trabalhos avaliativos da escola e do SENAI, o que muitas vezes me deixava
+                            dedicar tempo aos trabalhos avaliativos da escola e do SENAI, o que muitas vezes me
+                            deixava
                             com pouquíssimas horas de sono.
                             <br><br>
                             Foi um período intenso, mas que moldou minha determinação e minha paixão por tecnologia.
                             Hoje, levo comigo essa mesma dedicação em tudo o que faço.
+                        </p>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
+                            data-bs-target="#modalPeloQuePassei">
+                            Ver mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Modal pelo que passei p/ mobile -->
+        <div class="modal fade" id="modalPeloQuePassei" tabindex="-1" aria-labelledby="modalPeloQuePassei"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="modalPeloQuePassei">Pelo que já passei?</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Desde cedo, enfrentei rotinas desafiadoras que me ajudaram a desenvolver disciplina e
+                            resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a
+                            escola
+                            e, à tarde, conciliava trabalho e estudos no SEST SENAT. Sempre levava minha marmita na
+                            bolsa, o que nem sempre era fácil, às vezes, as condições do dia faziam com que a comida
+                            azedasse, me ensinando a lidar com imprevistos e a me adaptar às circunstâncias.
+                            <br><br>
+                            Após o trabalho ou o SEST SENAT, meu dia ainda estava longe de acabar. Às 18h, eu
+                            iniciava
+                            as aulas no SENAI, onde cursava Técnico em Desenvolvimento de Sistemas até as 22h30. A
+                            escola ficava longe de casa, e, sem outro meio de transporte, eu fazia todo esse trajeto
+                            de
+                            bicicleta, pedalando o dia inteiro. Quando finalmente chegava em casa, ainda precisava
+                            dedicar tempo aos trabalhos avaliativos da escola e do SENAI, o que muitas vezes me
+                            deixava
+                            com pouquíssimas horas de sono.
+                            <br><br>
+                            Foi um período intenso, mas que moldou minha determinação e minha paixão por tecnologia.
+                            Hoje, levo comigo essa mesma dedicação em tudo o que faço.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="imgConteudoAbout" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
                 <div class="contentContainer">
 
@@ -242,18 +352,26 @@
                         <h1 class="titleConteudoAbout">O que já conquistei?</h1>
                         <p class="textoConteudoAbout fs-5">
                             Ao longo da minha trajetória, cada desafio enfrentado foi um passo rumo às minhas
-                            conquistas. Hoje, tenho meu próprio veículo, certificações que comprovam minha dedicação aos
-                            estudos, incluindo reconhecimentos como aluno destaque e cursos concluídos com excelência.
-                            Meus esforços também renderam notas máximas em trabalhos avaliativos, além de uma medalha e
+                            conquistas. Hoje, tenho meu próprio veículo, certificações que comprovam minha dedicação
+                            aos
+                            estudos, incluindo reconhecimentos como aluno destaque e cursos concluídos com
+                            excelência.
+                            Meus esforços também renderam notas máximas em trabalhos avaliativos, além de uma
+                            medalha e
                             prêmios que simbolizam minha busca constante por evolução.
                             <br><br>
-                            Além disso, conquistei uma vaga como Operador de Sistemas de Informática na empresa BigCard,
+                            Além disso, conquistei uma vaga como Operador de Sistemas de Informática na empresa
+                            BigCard,
                             uma
                             área em que as oportunidades são muito disputadas. O processo seletivo foi desafiador,
                             com mais de 25 candidatos concorrendo, mas minha preparação e perseverança me
                             levaram à aprovação. Essa conquista representa não apenas minha capacidade técnica, mas
                             também minha determinação em alcançar meus objetivos.
                         </p>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
+                            data-bs-target="#modalConquistei">
+                            Ver mais
+                        </button>
                     </div>
                     <div class="imgContainer">
                         <img src="../assets/img/about/about_30.jpg" alt="Conquistas" class="img-fluid">
@@ -262,8 +380,42 @@
             </div>
         </div>
 
+        <!-- Modal o que já conquistei p/ mobile -->
+        <div class="modal fade" id="modalConquistei" tabindex="-1" aria-labelledby="modalConquistei" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="modalConquistei">O que já conquistei?</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Ao longo da minha trajetória, cada desafio enfrentado foi um passo rumo às minhas
+                            conquistas. Hoje, tenho meu próprio veículo, certificações que comprovam minha dedicação
+                            aos
+                            estudos, incluindo reconhecimentos como aluno destaque e cursos concluídos com
+                            excelência.
+                            Meus esforços também renderam notas máximas em trabalhos avaliativos, além de uma
+                            medalha e
+                            prêmios que simbolizam minha busca constante por evolução.
+                            <br><br>
+                            Além disso, conquistei uma vaga como Operador de Sistemas de Informática na empresa
+                            BigCard,
+                            uma
+                            área em que as oportunidades são muito disputadas. O processo seletivo foi desafiador,
+                            com mais de 25 candidatos concorrendo, mas minha preparação e perseverança me
+                            levaram à aprovação. Essa conquista representa não apenas minha capacidade técnica, mas
+                            também minha determinação em alcançar meus objetivos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- gráfico -->
-        <canvas id="techSkillsChart" width="300" height="100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"></canvas>
+        <canvas id="techSkillsChart" width="300" height="100" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-delay="100"></canvas>
 
         <!-- sessão leitura -->
 
@@ -277,9 +429,13 @@
                                 <h1 id="tituloAbout">Leitura </h1>
                                 <p class="fs-5" id="textoAbout">Nesta seção, compartilho livros que marcaram minha
                                     trajetória, seja no crescimento profissional, no desenvolvimento pessoal ou na
-                                    ampliação do meu conhecimento. Cada recomendação carrega algo especial, ideias que me
-                                    inspiraram, lições valiosas e novas perspectivas que moldaram minha forma de pensar.
-                                    Espero que esses livros possam agregar tanto para você quanto agregaram para mim!
+                                    ampliação do meu conhecimento. Cada recomendação carrega algo especial, ideias
+                                    que
+                                    me
+                                    inspiraram, lições valiosas e novas perspectivas que moldaram minha forma de
+                                    pensar.
+                                    Espero que esses livros possam agregar tanto para você quanto agregaram para
+                                    mim!
                                 </p>
                             </div>
 
@@ -456,18 +612,18 @@
                             label: 'Meu nível de Habilidade',
                             data: [90, 60, 70, 80, 60, 85],
                             backgroundColor: [
-                                'rgba(153, 102, 255, 0.3)', 
-                                'rgba(255, 205, 86, 0.3)',   
-                                'rgba(75, 192, 192, 0.3)',   
-                                'rgba(169, 169, 169, 0.3)',  
-                                'rgba(0, 0, 139, 0.3)'      
+                                'rgba(153, 102, 255, 0.3)',
+                                'rgba(255, 205, 86, 0.3)',
+                                'rgba(75, 192, 192, 0.3)',
+                                'rgba(169, 169, 169, 0.3)',
+                                'rgba(0, 0, 139, 0.3)'
                             ],
                             borderColor: [
-                                'rgba(153, 102, 255, 1)',  
-                                'rgba(255, 205, 86, 1)',   
-                                'rgba(75, 192, 192, 1)',    
-                                'rgba(169, 169, 169, 1)', 
-                                'rgba(0, 0, 139, 1)'       
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 205, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(169, 169, 169, 1)',
+                                'rgba(0, 0, 139, 1)'
                             ],
                             borderWidth: 2
                         }]

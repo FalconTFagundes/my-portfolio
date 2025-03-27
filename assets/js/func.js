@@ -69,5 +69,33 @@ function successTransitionRecursos(destino, event){
   });
 }
 
-/* chart JS */
+/* modal ver mais da aba SOBRE MIM */
+
+// Seleciona todos os botões "Ver mais"
+document.querySelectorAll(".btnVerMais").forEach(button => {
+  button.addEventListener("click", function() {
+    // Acha a modal correspondente ao botão clicado
+    const modal = this.closest(".container-fluid").querySelector(".modal");
+    if (modal) {
+      modal.style.display = "block";
+    }
+  });
+});
+
+// Fecha a modal ao clicar no botão "x"
+document.querySelectorAll(".close-btn").forEach(button => {
+  button.addEventListener("click", function() {
+    this.closest(".modal").style.display = "none";
+  });
+});
+
+// Fecha a modal ao clicar fora dela
+window.addEventListener("click", function(event) {
+  document.querySelectorAll(".modal").forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+
 
