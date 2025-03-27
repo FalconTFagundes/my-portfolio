@@ -1,8 +1,27 @@
-body {
+html, body {
   overflow-x: hidden;
-
+  width: 100%;
 }
 
+
+body.modal-open {
+  overflow-x: hidden !important;
+  padding-right: 0 !important;
+}
+
+.modal-dialog {
+  max-width: 90%;
+  margin: auto;
+}
+
+.modal-content {
+  width: 100%;
+}
+
+.modal-body {
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
 
 @keyframes fadeDescendo {
   from {
@@ -469,7 +488,7 @@ canvas {
   .btnVerMais {
     display: block !important;
     margin-top: 10px;
-    margin: 20px auto; 
+    margin: 20px auto;
   }
 
 
@@ -477,7 +496,7 @@ canvas {
     height: 50rem !important;
     font-size: 20px !important;
   }
-  
+
 
 
 
@@ -593,9 +612,9 @@ canvas {
   }
 
   .imgConteudoAbout img {
-    margin-left: 0; 
+    margin-left: 0;
     margin-right: 0;
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   .contentContainer {
