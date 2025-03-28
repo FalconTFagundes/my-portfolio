@@ -87,6 +87,7 @@ function confirmDownloadCV(event) {
   });
 }
 
+
 /* modal ver mais da aba SOBRE MIM */
 
 document.querySelectorAll(".btnVerMais").forEach(button => {
