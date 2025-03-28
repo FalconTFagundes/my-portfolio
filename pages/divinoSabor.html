@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fagundes</title>
+
+    <!-- link font Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- link font roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- link favicon rafael.f -->
+    <link rel="shortcut icon" href="../assets/icons/Rafael-Fagundes-Icone.ico" type="image/x-icon">
+
+    <!-- Link Booststrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="container-fluid" style="background-color: black;">
+        <div class="container text-center" style="background-color: black;">
+            <nav class="navbar navbar-expand-lg navbar-dark p-2">
+                <a class="navbar-brand" href="/my-portfolio/index.html">
+                    <img src="../assets/img/falconImg.png" alt="FalconTFagundes" height="70" width="70">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav p-2">
+                        <li class="nav-item ms-4">
+                            <a class="navTitles" href="sobre.html" onclick="">SOBRE MIM</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="navTitles" href="projetos.html" onclick="">PROJETOS</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="navTitles" href="curriculo.html" onclick="">CURRÍCULO</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="navTitles" href="contato.html" onclick="">CONTATO</a>
+                        </li>
+                        <li class="nav-item ms-4 me-5">
+                            <a class="navTitles" href="recursos.html" onclick="">RECURSOS ÚTEIS </a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="navTitles" href="https://www.linkedin.com/in/rafael-fagundes-518974258"
+                                target="_blank" onclick="successTransition('Linkedin', event)">
+                                <i class='bx bxl-linkedin fs-2'></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="navTitles " href="https://www.instagram.com/fagundes.icm/?hl=pt-br"
+                                target="_blank" onclick="successTransition('Instagram', event)">
+                                <i class='bx bxl-instagram fs-2'></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="navTitles" href="https://github.com/FalconTFagundes" target="_blank"
+                                onclick="successTransition('Github', event)">
+                                <i class='bx bxl-github fs-2'></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="navTitles" href="https://www.facebook.com/profile.php?id=100013959692622"
+                                target="_blank" onclick="successTransition('Facebook', event)">
+                                <i class='bx bxl-facebook fs-2'></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div>
+        <div class="container-fluid shadow-custom">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="hero-section">
+                            <div class="hero-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="2000">
+
+                                <h1 class="tituloProjeto">Sistema de Gerenciamento Empresarial.</h1>
+                                <p class="fs-5 textoAbout">Gerencie e expanda sua empresa com eficiência usando este
+                                    sistema completo de gestão empresarial.</p>
+                            </div>
+
+                            <div class="hero-image moving-element" data-aos="fade-right" data-aos-duration="1500"
+                                data-aos-delay="2000">
+                                <img src="../assets/img/projects/divinoSabor.png" class="imagemProjeto"
+                                    alt="Sistema de Gerenciamento Empresarial - Divino Sabor" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="font-monospace fs-5 mt-5 text-center text-custom" data-aos="fade-up" data-aos-duration="1000">SOBRE O
+            SISTEMA</p>
+
+        <!-- cards de imagens -->
+
+        <div class="card-group" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card cardProjeto">
+                <img src="../assets/img/projects/divinoSabor2.png" class="card-img"
+                    alt="Explicando sobre trabalho curso técnico">
+                <div class="card-body card-body-projeto">
+                    <h5 class="card-title">Menu Rotativo de Fácil Navegação</h5>
+                    <p class="card-text">Praticidade em navegar pelo sistema.</p>
+
+                </div>
+            </div>
+            <div class="card cardProjeto">
+                <img src="../assets/img/projects/divinoSabor3.png" class="card-img" alt="Um pouco de pedal">
+                <div class="card-body card-body-projeto">
+                    <h5 class="card-title">Use com Leitor de Código de Barras</h5>
+                    <p class="card-text">Integração que facilita a gestão.</p>
+
+                </div>
+            </div>
+            <div class="card cardProjeto">
+                <img src="../assets/img/projects/divinoSabor4.png" class="card-img" alt="Amor da minha vida">
+                <div class="card-body card-body-projeto">
+                    <h5 class="card-title">Abas intuitivas</h5>
+                    <p class="card-text">Visualização limpa, facilitando o entendimento.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="maisInfoProjeto" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+            <div class="textoDentroProjeto">
+                <h1>Desenvolvimento</h1>
+                <p class="fs-5">Desenvolvido como parte do meu TCC no curso Técnico em Desenvolvimento de Sistemas, este
+                    projeto surgiu a partir de uma dor real vivida pela empresa Buffet Divino Sabor. A empresa
+                    enfrentava processos manuais ineficientes que comprometiam sua agilidade e organização. A partir
+                    dessa necessidade, eu e meu grupo desenvolvemos um sistema completo de gestão empresarial,
+                    utilizando PHP para
+                    garantir robustez, Bootstrap para um layout moderno e intuitivo e entre outras bibliotecas. fizemos
+                    também
+                    uma integração com leitor de código de barras, para uma maior eficiência nos processos da
+                    empresa. Além disso, as rotas do sistema
+                    foram otimizadas com Ajax, proporcionando velocidade e uma experiência de usuário fluida.</p>
+
+            </div>
+            <img src="../assets/img/projects/divinoSaborLogo.png" class="img-fluid" alt="Logo Dinvino Sabor">
+        </div>
+
+
+
+
+        <div class="maisInfoProjeto" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+            <div class="textoDentroProjeto">
+                <h1>Aprovação</h1>
+                <p class="fs-5">O projeto foi inspirado em problemas reais de empresas, identificados através do portal
+                    de problemas do SENAI, e obteve grande sucesso, conquistando o primeiro lugar na apresentação do
+                    TCC, onde todos os grupos da sala participaram. Nosso trabalho foi o vencedor, com mais de 98% de
+                    aprovação. A avaliação foi realizada por uma banca crítica composta por outros professores do SENAI,
+                    que fizeram perguntas desafiadoras aos projetos apresentados. No entanto, no nosso trabalho, nem
+                    sequer
+                    houve questionamentos desse tipo, o que demonstrou o alto nível de qualidade e coerência da nossa
+                    solução.
+                </p>
+            </div>
+            <img src="../assets/img/projects/divinoSaborApresentacao.jpg" class="img-fluid"
+                alt="Divino Sabor Apresentação">
+        </div>
+
+        <!-- gráfico -->
+        <canvas id="techSkillsChart" width="300" height="100" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-delay="100"></canvas>
+
+
+
+        <div class="maisInfoProjeto" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+            <div class="textoDentroProjeto">
+                <h1>Login</h1>
+                <p class="fs-5">Uma tela de login moderna e atrativa, com design impactante, integrada a um banco de
+                    dados seguro e utilizando hash para criptografar senhas, garantindo proteção e confiabilidade.
+                </p>
+            </div>
+            <img src="../assets/img/projects/divinoSabor8.png" class="img-fluid" alt="Divino Sabor Login">
+        </div>
+
+        <div class="maisInfoProjeto" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+            <div class="textoDentroProjeto">
+                <h1>Modo Escuro</h1>
+                <p class="fs-5">Uma interface elegante com suporte ao modo escuro, proporcionando uma experiência de
+                    navegação confortável e personalizável, adaptando-se às preferências do usuário e oferecendo um
+                    visual sofisticado.
+                </p>
+            </div>
+            <img src="../assets/img/projects/divinoSabor9.png" class="img-fluid" alt="Divino Sabor Modo Escuro">
+        </div>
+
+        <div class="maisInfoProjeto" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+            <div class="textoDentroProjeto">
+                <h1>Integração com Leitores</h1>
+                <p class="fs-5">Uma integração eficiente com leitores de códigos de barras, permitindo uma gestão ágil e
+                    precisa, automatizando processos e otimizando a experiência do usuário com rapidez e praticidade.
+                </p>
+            </div>
+            <img src="../assets/img/projects/divinoSabor7.png" class="img-fluid" alt="Divino Sabor Modo Escuro">
+            <img src="../assets/img/projects/divinoSabor3.png" class="img-fluid" alt="Divino Sabor Modo Escuro">
+        </div>
+
+        <div class="maisInfoProjeto" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+            <div class="textoDentroProjeto">
+                <h1>Emissão de Relatórios</h1>
+                <p class="fs-5">Uma funcionalidade robusta de emissão de relatórios, permitindo gerar dados detalhados e
+                    personalizados, facilitando a análise de informações e a tomada de decisões com precisão e
+                    agilidade.
+                </p>
+            </div>
+            <img src="../assets/img/projects/divinoSabor5.png" class="img-fluid" alt="Divino Sabor Modo Escuro">
+        </div>
+
+        <p class="font-monospace fs-5 mt-5 text-center text-custom" data-aos="fade-down">SAIBA MAIS SOBRE ESTE PROJETO
+        </p>
+
+        <a href="https://github.com/FalconTFagundes/tcc-DivinoSabor" onclick="successTransition('Github', event)" style="text-decoration: none;">
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-outline-dark" type="button">Clique Aqui</button>
+            </div>
+          </a>
+          
+        </main>
+
+        <footer class="text-justify ">
+            <div class="container">
+                <p class="footer-contet">&copy; 2025 Rafael Fagundes</p>
+            </div>
+
+            <!-- Ícones sociais -->
+            <div class="social-links" id="social-links-id">
+                <a class="social-links" href="https://www.linkedin.com/in/rafael-fagundes-518974258" target="_blank"
+                    onclick="successTransition('Linkedin', event)">
+                    <i class='bx bxl-linkedin fs-2'></i>
+                </a>
+                <a class="social-links" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank"
+                    onclick="successTransition('Instagram', event)">
+                    <i class='bx bxl-instagram fs-2 ms-3'></i>
+                </a>
+                <a class="social-links" href="https://github.com/FalconTFagundes" target="_blank"
+                    onclick="successTransition('Github', event)">
+                    <i class='bx bxl-github fs-2 ms-3'></i>
+                </a>
+                <a class="social-links" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank"
+                    onclick="successTransition('Facebook', event)">
+                    <i class='bx bxl-facebook fs-2 ms-3'></i>
+                </a>
+            </div>
+        </footer>
+
+
+
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var ctx = document.getElementById('techSkillsChart').getContext('2d');
+                var techSkillsChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['JavaScript', 'PHP', 'Ajax', 'MySQL'],
+                        datasets: [{
+                            label: 'Tecnologias Utilizadas',
+                            data: [90, 70, 90, 60],
+                            backgroundColor: [
+                                'rgba(255, 205, 86, 0.3)',
+                                'rgba(153, 102, 255, 0.3)',
+                                'rgba(169, 169, 169, 0.3)',
+                                'rgba(0, 0, 139, 0.3)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 205, 86, 1)',
+                                'rgba(153, 102, 255, 1)',
+
+                                'rgba(169, 169, 169, 1)',
+                                'rgba(0, 0, 139, 1)'
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            tooltip: {
+                                enabled: true,
+                                backgroundColor: 'rgba(0,0,0,0.7)',
+                                bodyColor: '#fff'
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    stepSize: 10,
+                                    max: 100
+                                },
+                                grid: {
+                                    color: '#ddd',
+                                    borderColor: '#bbb'
+                                }
+                            },
+                            x: {
+                                grid: {
+                                    display: false,
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <!-- JS -->
+        <script src="../assets/js/func.js"></script>
+
+        <!-- Linkk bootstrap js + popper -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+
+        <!-- Chart JS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+        <!-- sweetalert -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!-- AOS Animation JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Iniciando o AOS Animation -->
+        <script>
+            AOS.init(); 
+        </script>
+</body>
+</html>

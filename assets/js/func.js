@@ -25,13 +25,6 @@ function sendToWhatsApp() {
 
 }
 
-function erroDisabledButton() {
-  Swal.fire({
-    icon: "error",
-    title: "Indisponível",
-    text: "Seção em desenvolvimento!"
-  });
-}
 
 function successTransition(destino, event) {
   event.preventDefault();
