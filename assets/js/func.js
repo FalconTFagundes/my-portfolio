@@ -75,10 +75,18 @@ function confirmDownloadCV(event) {
       cancelButtonText: "Cancelar"
   }).then((result) => {
       if (result.isConfirmed) {
-          window.location.href = event.target.href;
+          const link = event.target;
+          const downloadUrl = link.href;
+
+          const tempLink = document.createElement('a');
+          tempLink.href = downloadUrl;
+          tempLink.download = downloadUrl.substring(downloadUrl.lastIndexOf('/') + 1);
+
+          tempLink.click();
       }
   });
 }
+
 
 
 /* modal ver mais da aba SOBRE MIM */
