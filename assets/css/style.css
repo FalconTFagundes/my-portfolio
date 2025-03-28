@@ -327,6 +327,43 @@ footer p {
 }
 
 
+/* aba projetos */
+
+
+#textoProjetos {
+  text-align: justify;
+  gap: 30px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+#tituloProjetos {
+  font-family: 'roboto', sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 60px;
+}
+
+
+.linkCardProjetos {
+  text-decoration: none;
+}
+
+.cardProjetos{
+  transition: 0.5s !important;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 1%
+}
+
+.cardProjetos:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3) !important;
+  transition: 0.5s !important;
+  transform: translateY(-5px) !important;
+
+}
+
+
+
 /* aba curriculo */
 
 #tituloCurriculo {
@@ -599,6 +636,8 @@ canvas {
   #tituloRecursos {
     width: 11rem;
   }
+
+  
 
 
 
