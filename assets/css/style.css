@@ -10,6 +10,24 @@ body.modal-open {
   padding-right: 0 !important;
 }
 
+/* animação de fade nav */
+.fade-up {
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.9s ease, 0.9s ease;
+}
+
+
+.fade-up.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+
+
+
+
 .modal-dialog {
   max-width: 90%;
   margin: auto;

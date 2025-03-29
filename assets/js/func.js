@@ -25,6 +25,32 @@ function sendToWhatsApp() {
 
 }
 
+/* nav transição */
+function navAlert(event) {
+    event.preventDefault(); 
+
+    const linkDestino = event.currentTarget.getAttribute('href'); 
+
+    document.body.classList.add('fade-up', 'hidden'); 
+
+    setTimeout(() => {
+      window.location.replace(linkDestino);
+    }, 500); 
+  }
+
+  document.querySelectorAll('.transitionNav').forEach(link => {
+    link.addEventListener('click', navAlert); 
+  });
+
+  window.onpopstate = function() {
+    document.body.classList.add('fade-up', 'hidden');
+    setTimeout(() => {
+      window.location.reload(); 
+    }, 500); 
+  };
+
+  history.pushState({}, document.title, location.href);
+
 
 function successTransition(destino, event) {
   event.preventDefault();
@@ -44,7 +70,7 @@ function successTransition(destino, event) {
   });
 }
 
-function successTransitionRecursos(destino, event){
+function successTransitionRecursos(destino, event) {
   event.preventDefault();
 
   const linkDestino = event.currentTarget.getAttribute('href');
@@ -64,26 +90,26 @@ function successTransitionRecursos(destino, event){
 
 
 function confirmDownloadCV(event) {
-  event.preventDefault(); 
+  event.preventDefault();
 
   Swal.fire({
-      title: "Baixar Currículo?",
-      text: "Deseja realmente fazer o download?",
-      icon: "question",
-      showCancelButton: true,
-      confirmButtonText: "Sim, baixar",
-      cancelButtonText: "Cancelar"
+    title: "Baixar Currículo?",
+    text: "Deseja realmente fazer o download?",
+    icon: "question",
+    showCancelButton: true,
+    confirmButtonText: "Sim, baixar",
+    cancelButtonText: "Cancelar"
   }).then((result) => {
-      if (result.isConfirmed) {
-          const link = event.target;
-          const downloadUrl = link.href;
+    if (result.isConfirmed) {
+      const link = event.target;
+      const downloadUrl = link.href;
 
-          const tempLink = document.createElement('a');
-          tempLink.href = downloadUrl;
-          tempLink.download = downloadUrl.substring(downloadUrl.lastIndexOf('/') + 1);
+      const tempLink = document.createElement('a');
+      tempLink.href = downloadUrl;
+      tempLink.download = downloadUrl.substring(downloadUrl.lastIndexOf('/') + 1);
 
-          tempLink.click();
-      }
+      tempLink.click();
+    }
   });
 }
 
@@ -92,7 +118,7 @@ function confirmDownloadCV(event) {
 /* modal ver mais da aba SOBRE MIM */
 
 document.querySelectorAll(".btnVerMais").forEach(button => {
-  button.addEventListener("click", function() {
+  button.addEventListener("click", function () {
     // Acha a modal correspondente ao botão clicado
     const modal = this.closest(".container-fluid").querySelector(".modal");
     if (modal) {
@@ -102,12 +128,12 @@ document.querySelectorAll(".btnVerMais").forEach(button => {
 });
 
 document.querySelectorAll(".close-btn").forEach(button => {
-  button.addEventListener("click", function() {
+  button.addEventListener("click", function () {
     this.closest(".modal").style.display = "none";
   });
 });
 
-window.addEventListener("click", function(event) {
+window.addEventListener("click", function (event) {
   document.querySelectorAll(".modal").forEach(modal => {
     if (event.target === modal) {
       modal.style.display = "none";
