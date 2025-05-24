@@ -655,11 +655,11 @@ footer p {
   font-family: 'Roboto', sans-serif;
   text-align: justify;
   font-size: 20px !important;
-  line-height: 1.6 ;
+  line-height: 1.6;
   color: #000000;
 }
 
-.marginBAbout{
+.marginBAbout {
   margin-bottom: 5%;
 }
 
@@ -683,7 +683,15 @@ canvas {
   .footer-contet {
     margin-left: 20%;
   }
+  .marginBAbout{
+    justify-content: center;
+
 }
+
+
+}
+
+
 
 /* RESPONSIVIDADE MOBILE */
 
