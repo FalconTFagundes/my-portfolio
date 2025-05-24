@@ -647,16 +647,20 @@ footer p {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 60px;
-  color: #000000;
+  color: #002f70;
   width: 40rem;
 }
 
 .textoConteudoAbout {
   font-family: 'Roboto', sans-serif;
   text-align: justify;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #555;
+  font-size: 20px !important;
+  line-height: 1.6 ;
+  color: #000000;
+}
+
+.marginBAbout{
+  margin-bottom: 5%;
 }
 
 canvas {
