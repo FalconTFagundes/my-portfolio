@@ -109,6 +109,21 @@ header {
   border-radius: 2vh;
 }
 
+#hero-section-projetos{
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+#hero-section-about{
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  overflow: hidden;
+  margin-top: 4rem;
+}
 
 .hero-section {
   display: flex;
@@ -201,6 +216,12 @@ footer p {
   height: 200px;
   object-fit: cover;
 
+}
+
+
+#imgTituloProjetos{
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -683,14 +704,14 @@ canvas {
   .footer-contet {
     margin-left: 20%;
   }
-  .marginBAbout{
+
+  .marginBAbout {
     justify-content: center;
 
-}
+  }
 
 
 }
-
 
 
 /* RESPONSIVIDADE MOBILE */
@@ -710,6 +731,7 @@ canvas {
 @media (max-width: 1024px) {
 
   /* btn modal mobile - page sobre mim */
+
   .textoConteudoAbout {
     display: none !important;
   }
@@ -751,13 +773,17 @@ canvas {
     align-items: center;
     border-radius: 15px;
 
-
   }
 
   .hero-image img {
-    transform: scale(1.3) !important;
+    transform: scale(1.5) !important;
     margin-left: 20px;
 
+  }
+
+  #hero-index img {
+    transform: scale(2) !important;
+    margin-left: 20px;
   }
 
   .hero-text h1 {
@@ -812,6 +838,13 @@ canvas {
 
 
 
+  #textoProjetos {
+  gap: 30px !important;
+  font-family: 'Roboto', sans-serif !important;
+  color: blue !important;
+  width: 100%;
+
+}
 
 
   .textoAbout {
