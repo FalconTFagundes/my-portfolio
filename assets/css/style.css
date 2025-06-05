@@ -224,6 +224,12 @@ footer p {
   padding: 0;
 }
 
+#imgTituloAbout{
+  margin: 0;
+  padding: 0;
+}
+
+
 
 .projetosRecentes {
   font-family: 'Roboto', sans-serif;
@@ -554,8 +560,7 @@ footer p {
 /* aba sobre mim */
 
 #aboutImg {
-  transform: scale(0.4);
-  width: 100%;
+  transform: scale(0.8);
 
 }
 
