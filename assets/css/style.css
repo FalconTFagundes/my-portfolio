@@ -553,10 +553,10 @@ footer p {
 
 /* aba sobre mim */
 
-.rafaelAbout {
-  transform: scale(0.6);
-  box-shadow: 1px 1px 15px black;
-  border-radius: 2rem;
+#aboutImg {
+  transform: scale(0.4);
+  width: 100%;
+
 }
 
 #tituloAbout {
@@ -852,12 +852,8 @@ canvas {
   }
 
 
-  .rafaelAbout {
-    box-shadow: 1px 1px 5px black;
-  }
-
   #aboutImg {
-    transform: scale(1.1) !important;
+    transform: scale(0.9) !important;
   }
 
   .imgConteudoAbout {
