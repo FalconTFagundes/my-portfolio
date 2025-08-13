@@ -265,6 +265,33 @@ footer p {
   animation: pulso 1.5s ease-in-out infinite;
 }
 
+
+.btn-outline-dark {
+  position: relative;
+  padding-right: 30px; 
+  transition: background-color 0.3s ease;
+}
+
+.btn-outline-dark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: right 0.3s ease;
+}
+
+.btn-outline-dark:hover::after {
+  right: 8px; 
+}
+
+
+
 /* aba recursos úteis */
 
 #containerRecursos {
