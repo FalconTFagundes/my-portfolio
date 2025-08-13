@@ -320,6 +320,32 @@ footer p {
 }
 
 
+h2.mb-4.text-center {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 0.35rem;
+  cursor: default;
+}
+
+h2.mb-4.text-center::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 2px;
+  background-color: #adadad;
+  border-radius: 1px;
+  opacity: 0.8;
+}
+
+
 
 
 
