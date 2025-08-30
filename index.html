@@ -6,16 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fagundes</title>
 
+  <!-- link font Montserrat -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- link font roboto -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+  <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- link favicon rafael.f -->
   <link rel="shortcut icon" href="./assets/icons/Rafael-Fagundes-Icone.ico" type="image/x-icon">
 
+  <!-- Link Bootstrap css-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -40,6 +46,7 @@
       padding-right: 0 !important;
     }
 
+    /* Header preto com efeito de descer */
     header {
       background-color: #000000;
       position: fixed;
@@ -58,16 +65,8 @@
     }
 
     .navbar {
-      padding: 1rem 0;
+      padding: 1.5rem 0;
       border: none;
-    }
-
-    /* Diminuindo tamanho header para mobiles */
-
-    @media (max-width: 768px) {
-      .navbar {
-        padding: 0.5rem 0;;
-      }
     }
 
     .navbar-brand img {
@@ -105,10 +104,12 @@
       transform: translateY(-2px);
     }
 
+    /* Main content com espaçamento para header fixo */
     main {
       margin-top: 100px;
     }
 
+    /* Hero section limpo */
     .hero-section {
       min-height: 90vh;
       display: flex;
@@ -295,15 +296,8 @@
 
     /* Animações */
     @keyframes float {
-
-      0%,
-      100% {
-        transform: translateY(0px);
-      }
-
-      50% {
-        transform: translateY(-10px);
-      }
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
     }
 
     .moving-element {
@@ -364,6 +358,60 @@
       .social-links-container {
         margin-top: 1rem;
       }
+    }
+
+    .whatsapp-btn {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: #ffffff;
+      padding: 1.2rem 3rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      border: none;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.1rem;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+      position: relative;
+      overflow: hidden;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .whatsapp-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: all 0.6s ease;
+    }
+
+    .whatsapp-btn:hover::before {
+      left: 100%;
+    }
+
+    .whatsapp-btn:hover {
+      background: linear-gradient(135deg, #20BA5A 0%, #0D6F63 100%);
+      color: #ffffff;
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
+      text-decoration: none;
+    }
+
+    .whatsapp-btn i {
+      font-size: 1.4rem;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
     }
 
     /* Header scroll effect */
@@ -439,9 +487,8 @@
             <h1>
               Transformo <span class="highlight">suas ideias</span> em soluções digitais que geram resultados
             </h1>
-            <p>Olá! Sou Rafael Fagundes, desenvolvedor apaixonado por criar experiências digitais únicas e funcionais.
-            </p>
-
+            <p>Olá! Sou Rafael Fagundes, desenvolvedor apaixonado por criar experiências digitais únicas e funcionais.</p>
+            
             <div class="tech-badges">
               <span class="tech-badge"><i class='bx bxl-php'></i></span>
               <span class="tech-badge"><i class='bx bxl-jquery'></i></span>
@@ -449,8 +496,15 @@
               <span class="tech-badge"><i class='bx bxs-data'></i></span>
               <span class="tech-badge"><i class='bx bxl-git'></i></span>
             </div>
+            
+            <div class="cta-section" style="margin-top: 3rem;">
+              <a href="https://wa.me/5533991414767?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto." target="_blank" class="whatsapp-btn">
+                <i class='bx bxl-whatsapp'></i>
+                Vamos conversar
+              </a>
+            </div>
           </div>
-
+          
           <div class="hero-image moving-element">
             <img src="assets/img/rafaelFagundes.png" alt="Rafael Fagundes" class="img-fluid">
           </div>
@@ -473,7 +527,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card custom-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
               <img src="assets/img/projects/pnh.png" class="card-img-top" alt="Preta Nails Hair">
@@ -484,7 +538,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card custom-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
               <img src="assets/img/projects/actionHeroes.PNG" class="card-img-top" alt="Action Heroes">
@@ -528,8 +582,10 @@
     </div>
   </footer>
 
+  <!-- JS -->
   <script src="assets/js/func.js"></script>
 
+  <!-- Bootstrap JS + Popper -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -537,14 +593,17 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
 
+  <!-- SweetAlert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+  <!-- AOS Animation JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
     AOS.init();
 
-    window.addEventListener('scroll', function () {
+    // Efeito de scroll no header
+    window.addEventListener('scroll', function() {
       const header = document.querySelector('header');
       if (window.scrollY > 50) {
         header.classList.add('header-scrolled');
@@ -554,5 +613,4 @@
     });
   </script>
 </body>
-
 </html>
