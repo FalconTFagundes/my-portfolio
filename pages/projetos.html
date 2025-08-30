@@ -58,9 +58,20 @@
         }
 
         .navbar {
-            padding: 1.5rem 0;
+            padding: 1rem 0;
             border: none;
         }
+
+
+        /* Diminuindo tamanho header para mobiles */
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 0.5rem 0;
+                ;
+            }
+        }
+
 
         .navbar-brand img {
             transition: transform 0.3s ease;
@@ -257,8 +268,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         .moving-element {
@@ -368,8 +386,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="navTitles" href="https://www.instagram.com/fagundes.icm/?hl=pt-br"
-                                target="_blank" onclick="successTransition('Instagram', event)">
+                            <a class="navTitles" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank"
+                                onclick="successTransition('Instagram', event)">
                                 <i class='bx bxl-instagram fs-2'></i>
                             </a>
                         </li>
@@ -397,7 +415,8 @@
                 <div class="page-hero-content" data-aos="fade-up" data-aos-duration="1500">
                     <div class="page-hero-text">
                         <h1>Projetos.</h1>
-                        <p>Aqui apresento alguns dos projetos que desenvolvi, desde aplicações web até soluções voltadas para automação e eficiência.</p>
+                        <p>Aqui apresento alguns dos projetos que desenvolvi, desde aplicações web até soluções voltadas
+                            para automação e eficiência.</p>
                     </div>
                     <div class="page-hero-image moving-element">
                         <img src="../assets/img/projects/abaProjetos.png" alt="Projetos Rafael" class="img-fluid">
@@ -417,10 +436,12 @@
                                 <img src="../assets/img/projects/DLMotors.png" class="card-img-top" alt="DL Motors">
                                 <div class="card-body">
                                     <h5 class="card-title">DL Motors</h5>
-                                    <p class="card-text">Apresentação dos serviços de limpeza de veículos, galeria de imagens e contato rápido via WhatsApp para facilitar seu pedido.</p>
+                                    <p class="card-text">Apresentação dos serviços de limpeza de veículos, galeria de
+                                        imagens e contato rápido via WhatsApp para facilitar seu pedido.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://github.com/FalconTFagundes/DLMotors" target="_blank" class="gitCard">
+                                    <a href="https://github.com/FalconTFagundes/DLMotors" target="_blank"
+                                        class="gitCard">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -434,7 +455,9 @@
                                 <img src="../assets/img/projects/pnh.png" class="card-img-top" alt="Preta Nails Hair">
                                 <div class="card-body">
                                     <h5 class="card-title">Preta Nails Hair</h5>
-                                    <p class="card-text">Site institucional desenvolvido para o salão Preta Nails Hair, com foco em uma experiência intuitiva para facilitar o contato com clientes e a apresentação dos serviços.</p>
+                                    <p class="card-text">Site institucional desenvolvido para o salão Preta Nails Hair,
+                                        com foco em uma experiência intuitiva para facilitar o contato com clientes e a
+                                        apresentação dos serviços.</p>
                                 </div>
                                 <div class="card-footer">
                                     <a href="https://github.com/FalconTFagundes/pnh" target="_blank" class="gitCard">
@@ -448,13 +471,16 @@
                     <div class="col">
                         <a href="divinoSabor.html" class="linkCardProjetos">
                             <div class="card custom-card" data-aos="fade-up">
-                                <img src="../assets/img/projects/divinoSabor.png" class="card-img-top" alt="Divino Sabor">
+                                <img src="../assets/img/projects/divinoSabor.png" class="card-img-top"
+                                    alt="Divino Sabor">
                                 <div class="card-body">
                                     <h5 class="card-title">Divino Sabor - Gestão Empresarial</h5>
-                                    <p class="card-text">Desenvolva e gerencie sua empresa de forma eficiente com o meu sistema abrangente de gestão empresarial.</p>
+                                    <p class="card-text">Desenvolva e gerencie sua empresa de forma eficiente com o meu
+                                        sistema abrangente de gestão empresarial.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://github.com/FalconTFagundes/tcc-DivinoSabor" target="_blank" class="gitCard">
+                                    <a href="https://github.com/FalconTFagundes/tcc-DivinoSabor" target="_blank"
+                                        class="gitCard">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -465,13 +491,17 @@
                     <div class="col">
                         <a href="actionHerores.html" class="linkCardProjetos">
                             <div class="card custom-card" data-aos="fade-up">
-                                <img src="../assets/img/projects/actionHeroes.PNG" class="card-img-top" alt="Action Heroes">
+                                <img src="../assets/img/projects/actionHeroes.PNG" class="card-img-top"
+                                    alt="Action Heroes">
                                 <div class="card-body">
                                     <h5 class="card-title">Loja Action Heroes c/ Dashboard</h5>
-                                    <p class="card-text">Oferece dashboard intuitiva, permitindo controle de elementos visuais, cadastro de imagens, ativação/desativação de recursos e gestão de vendas.</p>
+                                    <p class="card-text">Oferece dashboard intuitiva, permitindo controle de elementos
+                                        visuais, cadastro de imagens, ativação/desativação de recursos e gestão de
+                                        vendas.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://github.com/FalconTFagundes/actionHeroes-AND-dashboard" target="_blank" class="gitCard">
+                                    <a href="https://github.com/FalconTFagundes/actionHeroes-AND-dashboard"
+                                        target="_blank" class="gitCard">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -482,13 +512,17 @@
                     <div class="col">
                         <a href="#" class="linkCardProjetos">
                             <div class="card custom-card" data-aos="fade-up">
-                                <img src="../assets/img/projects/pythonspaceshipgame.png" class="card-img-top" alt="Python Spaceship Game">
+                                <img src="../assets/img/projects/pythonspaceshipgame.png" class="card-img-top"
+                                    alt="Python Spaceship Game">
                                 <div class="card-body">
                                     <h5 class="card-title">Python Spaceship Game</h5>
-                                    <p class="card-text">Jogo espacial totalmente desenvolvido em Python. Assuma o controle de uma nave espacial e mergulhe em um universo repleto de desafios interativos.</p>
+                                    <p class="card-text">Jogo espacial totalmente desenvolvido em Python. Assuma o
+                                        controle de uma nave espacial e mergulhe em um universo repleto de desafios
+                                        interativos.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://github.com/FalconTFagundes/PythonSpaceshipGame" target="_blank" class="gitCard">
+                                    <a href="https://github.com/FalconTFagundes/PythonSpaceshipGame" target="_blank"
+                                        class="gitCard">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -499,13 +533,18 @@
                     <div class="col">
                         <a href="#" class="linkCardProjetos">
                             <div class="card custom-card" data-aos="fade-up">
-                                <img src="../assets/img/projects/manualdodesenvolvedor.jpg" class="card-img-top" alt="Manual do Desenvolvedor">
+                                <img src="../assets/img/projects/manualdodesenvolvedor.jpg" class="card-img-top"
+                                    alt="Manual do Desenvolvedor">
                                 <div class="card-body">
                                     <h5 class="card-title">Manual do Desenvolvedor</h5>
-                                    <p class="card-text">Foi um dos meus primeiros criado no início do curso Técnico. A plataforma foi pensada para quem está começando e deseja aprender a criar funcionalidades básicas, como uma calculadora de IMC, um contador de cliques, entre outros projetos simples.</p>
+                                    <p class="card-text">Foi um dos meus primeiros criado no início do curso Técnico. A
+                                        plataforma foi pensada para quem está começando e deseja aprender a criar
+                                        funcionalidades básicas, como uma calculadora de IMC, um contador de cliques,
+                                        entre outros projetos simples.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://github.com/FalconTFagundes/manual-do-desenvolvedor" target="_blank" class="gitCard">
+                                    <a href="https://github.com/FalconTFagundes/manual-do-desenvolvedor" target="_blank"
+                                        class="gitCard">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -516,13 +555,17 @@
                     <div class="col">
                         <a href="#" class="linkCardProjetos">
                             <div class="card custom-card" data-aos="fade-up">
-                                <img src="../assets/img/projects/dashboardManipulacao.png" class="card-img-top" alt="Dashboard de Manipulação">
+                                <img src="../assets/img/projects/dashboardManipulacao.png" class="card-img-top"
+                                    alt="Dashboard de Manipulação">
                                 <div class="card-body">
                                     <h5 class="card-title">Dashboard de Manipulação</h5>
-                                    <p class="card-text">Ferramenta que permite uma manipulação elegante de elementos do seu site. Exclua, ative e cadastre com facilidade, proporcionando uma experiência intuitiva e eficiente.</p>
+                                    <p class="card-text">Ferramenta que permite uma manipulação elegante de elementos do
+                                        seu site. Exclua, ative e cadastre com facilidade, proporcionando uma
+                                        experiência intuitiva e eficiente.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://github.com/FalconTFagundes/AJAX-Dashboard" target="_blank" class="gitCard">
+                                    <a href="https://github.com/FalconTFagundes/AJAX-Dashboard" target="_blank"
+                                        class="gitCard">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -533,13 +576,17 @@
                     <div class="col">
                         <a href="#" class="linkCardProjetos">
                             <div class="card custom-card" data-aos="fade-up">
-                                <img src="../assets/img/projects/gerenciamentodetarefas.JPG" class="card-img-top" alt="Gerenciamento de Tarefas">
+                                <img src="../assets/img/projects/gerenciamentodetarefas.JPG" class="card-img-top"
+                                    alt="Gerenciamento de Tarefas">
                                 <div class="card-body">
                                     <h5 class="card-title">Gerenciamento de Tarefas</h5>
-                                    <p class="card-text">Este é um sistema simples para gerenciamento de tarefas, permitindo cadastrar, excluir e marcar tarefas como concluídas. Feito em PHP Procedural e utilizando MySQL para armazenamento dos dados.</p>
+                                    <p class="card-text">Este é um sistema simples para gerenciamento de tarefas,
+                                        permitindo cadastrar, excluir e marcar tarefas como concluídas. Feito em PHP
+                                        Procedural e utilizando MySQL para armazenamento dos dados.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://github.com/FalconTFagundes/teste-php-procedural" target="_blank" class="gitCard">
+                                    <a href="https://github.com/FalconTFagundes/teste-php-procedural" target="_blank"
+                                        class="gitCard">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -550,13 +597,17 @@
                     <div class="col">
                         <a href="#" class="linkCardProjetos">
                             <div class="card custom-card" data-aos="fade-up">
-                                <img src="../assets/img/projects/calculadoraIMC.JPG" class="card-img-top" alt="Calculadora de IMC">
+                                <img src="../assets/img/projects/calculadoraIMC.JPG" class="card-img-top"
+                                    alt="Calculadora de IMC">
                                 <div class="card-body">
                                     <h5 class="card-title">Calculadora de IMC</h5>
-                                    <p class="card-text">Uma simples calculadora de Índice de Massa Corporal (IMC) desenvolvida em PHP. Facilita o cálculo do IMC a partir do peso e altura inseridos pelo usuário.</p>
+                                    <p class="card-text">Uma simples calculadora de Índice de Massa Corporal (IMC)
+                                        desenvolvida em PHP. Facilita o cálculo do IMC a partir do peso e altura
+                                        inseridos pelo usuário.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://github.com/FalconTFagundes/calculadora-imc" target="_blank" class="gitCard">
+                                    <a href="https://github.com/FalconTFagundes/calculadora-imc" target="_blank"
+                                        class="gitCard">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -567,13 +618,18 @@
                     <div class="col">
                         <a href="#" class="linkCardProjetos">
                             <div class="card custom-card" data-aos="fade-up">
-                                <img src="../assets/img/projects/worldFiveStars.JPG" class="card-img-top" alt="WFS -Empresa dor / Empresa solucao">
+                                <img src="../assets/img/projects/worldFiveStars.JPG" class="card-img-top"
+                                    alt="WFS -Empresa dor / Empresa solucao">
                                 <div class="card-body">
                                     <h5 class="card-title">WFS - Gestão e Controle de Produtos</h5>
-                                    <p class="card-text">Desafio acadêmico, onde grupos criaram empresas fictícias com desafios operacionais. A empresa em questão enfrentava dificuldades ao gerenciar processos internos manualmente, resultando em ineficiência e erros nos registros de estoque, movimentação de produtos e cadastramento de funcionários.</p>
+                                    <p class="card-text">Desafio acadêmico, onde grupos criaram empresas fictícias com
+                                        desafios operacionais. A empresa em questão enfrentava dificuldades ao gerenciar
+                                        processos internos manualmente, resultando em ineficiência e erros nos registros
+                                        de estoque, movimentação de produtos e cadastramento de funcionários.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://github.com/FalconTFagundes/solucao-starnet-wfs-dor-solucao" target="_blank" class="gitCard">
+                                    <a href="https://github.com/FalconTFagundes/solucao-starnet-wfs-dor-solucao"
+                                        target="_blank" class="gitCard">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -584,13 +640,18 @@
                     <div class="col">
                         <a href="#" class="linkCardProjetos">
                             <div class="card custom-card" data-aos="fade-up">
-                                <img src="../assets/img/projects/portugolatividades.JPG" class="card-img-top" alt="Pack de Atividades de Portugol">
+                                <img src="../assets/img/projects/portugolatividades.JPG" class="card-img-top"
+                                    alt="Pack de Atividades de Portugol">
                                 <div class="card-body">
                                     <h5 class="card-title">Pack de Atividades de Portugol</h5>
-                                    <p class="card-text">Este projeto centraliza uma variedade de atividades desenvolvidas em Portugol, utilizando o VisualG. Ideal para professores que buscam recursos prontos para aplicar em suas aulas. O repositório oferece uma coleção diversificada de atividades.</p>
+                                    <p class="card-text">Este projeto centraliza uma variedade de atividades
+                                        desenvolvidas em Portugol, utilizando o VisualG. Ideal para professores que
+                                        buscam recursos prontos para aplicar em suas aulas. O repositório oferece uma
+                                        coleção diversificada de atividades.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://github.com/FalconTFagundes/Portugol-Visualg-Atividades" target="_blank" class="gitCard">
+                                    <a href="https://github.com/FalconTFagundes/Portugol-Visualg-Atividades"
+                                        target="_blank" class="gitCard">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -621,8 +682,8 @@
                         onclick="successTransition('Github', event)">
                         <i class='bx bxl-github'></i>
                     </a>
-                    <a class="social-links" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank"
-                        onclick="successTransition('Facebook', event)">
+                    <a class="social-links" href="https://www.facebook.com/profile.php?id=100013959692622"
+                        target="_blank" onclick="successTransition('Facebook', event)">
                         <i class='bx bxl-facebook'></i>
                     </a>
                 </div>
@@ -646,7 +707,7 @@
     <script>
         AOS.init();
 
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
                 header.classList.add('header-scrolled');
