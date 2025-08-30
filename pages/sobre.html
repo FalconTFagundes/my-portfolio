@@ -7,7 +7,7 @@
     <title>Fagundes</title>
 
     <!-- link font Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- link font roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,644 +21,913 @@
     <!-- link favicon rafael.f -->
     <link rel="shortcut icon" href="../assets/icons/Rafael-Fagundes-Icone.ico" type="image/x-icon">
 
-    <!-- Link Booststrap css-->
+    <!-- Link Bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- link css -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body.modal-open {
+            overflow-x: hidden !important;
+            padding-right: 0 !important;
+        }
+
+        /* Header preto com efeito de descer */
+        header {
+            background-color: #000000;
+            position: fixed;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: slideDown 1s ease-out 0.5s forwards;
+        }
+
+        @keyframes slideDown {
+            to {
+                top: 0;
+            }
+        }
+
+      .navbar {
+            padding: 1rem 0;
+            border: none;
+        }
+
+
+        /* Diminuindo tamanho header para mobiles */
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 0.5rem 0;
+                
+            }
+        }
+
+        .navbar-brand img {
+            transition: transform 0.3s ease;
+            border-radius: 50%;
+        }
+
+        .navbar-brand img:hover {
+            transform: scale(1.1);
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navTitles {
+            color: #ffffff;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+        }
+
+        .navTitles:hover {
+            color: #000000;
+            background-color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Main content com espaçamento para header fixo */
+        main {
+            margin-top: 100px;
+        }
+
+        /* Hero section da página */
+        .page-hero {
+            padding: 4rem 0;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .page-hero-content {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            width: 100%;
+        }
+
+        .page-hero-text {
+            flex: 1;
+            color: #000000;
+        }
+
+        .page-hero-text h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-hero-text p {
+            font-size: 1.3rem;
+            color: #666666;
+            line-height: 1.6;
+        }
+
+        .page-hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .page-hero-image img {
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .page-hero-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Seção de conteúdo */
+        .content-section {
+            padding: 6rem 0;
+            background-color: #ffffff;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 4rem;
+        }
+
+        /* Cards de características */
+        .about-card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            height: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-card-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .about-card-body {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .about-card-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: #000000;
+            margin-bottom: 0.5rem;
+        }
+
+        .about-card-text {
+            color: #666666;
+            font-size: 0.9rem;
+        }
+
+        /* Seções de conteúdo */
+        .content-block {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            margin-bottom: 6rem;
+        }
+
+        .content-block.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .content-text {
+            flex: 1;
+        }
+
+        .content-text h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1.5rem;
+        }
+
+        .content-text p {
+            font-size: 1.1rem;
+            color: #666666;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .content-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .content-image img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .content-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-ver-mais {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            border: none;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .btn-ver-mais:hover {
+            background-color: #333333;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Chart canvas */
+        #techSkillsChart {
+            margin: 3rem 0;
+            max-width: 100%;
+            width: 100%;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Divisor */
+        .divider {
+            width: 100%;
+            height: 1px;
+            background-color: #e5e5e5;
+            margin: 4rem 0;
+        }
+
+        /* Footer preto */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 3rem 0;
+            margin-top: 6rem;
+        }
+
+        .footer-contet {
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .social-links {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-links:hover {
+            color: #cccccc;
+            transform: translateY(-3px);
+        }
+
+        /* Animações */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .moving-element {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Responsividade */
+        @media (max-width: 1024px) {
+            main {
+                margin-top: 80px;
+            }
+
+            .page-hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .page-hero-text h1 {
+                font-size: 3rem;
+            }
+
+            .page-hero-text p {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .content-block, .content-block.reverse {
+                flex-direction: column;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .content-text h1 {
+                font-size: 2rem;
+            }
+
+            .btnVerMais {
+                display: block !important;
+                margin: 20px auto;
+            }
+
+            .textoConteudoAbout {
+                display: none !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .page-hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .page-hero {
+                padding: 2rem 0;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            #social-links-id {
+                justify-content: center;
+            }
+
+            .content-text h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .textoConteudoAbout {
+                display: block !important;
+            }
+
+            .btnVerMais {
+                display: none !important;
+            }
+        }
+
+        /* Header scroll effect */
+        .header-scrolled {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 
 <body>
-
-    <header class="container-fluid" style="background-color: black;">
-        <div class="container text-center" style="background-color: black;">
-            <nav class="navbar navbar-expand-lg navbar-dark p-2">
+    <header class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand transitionNav" href="../index.html">
                     <img src="../assets/img/falconImg.png" alt="FalconTFagundes" height="70" width="70">
                 </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav p-2">
-                        <li class="nav-item ms-4">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
                             <a class="navTitles transitionNav" href="sobre.html">SOBRE MIM</a>
                         </li>
-                        <li class="nav-item ms-4">
+                        <li class="nav-item">
                             <a class="navTitles transitionNav" href="projetos.html">PROJETOS</a>
                         </li>
-                        <li class="nav-item ms-4">
+                        <li class="nav-item">
                             <a class="navTitles transitionNav" href="curriculo.html">CURRÍCULO</a>
                         </li>
-                        <li class="nav-item ms-4">
+                        <li class="nav-item">
                             <a class="navTitles transitionNav" href="contato.html">CONTATO</a>
                         </li>
-                        <li class="nav-item ms-4 me-5">
-                            <a class="navTitles transitionNav" href="recursos.html">RECURSOS ÚTEIS </a>
+                        <li class="nav-item">
+                            <a class="navTitles transitionNav" href="recursos.html">RECURSOS ÚTEIS</a>
                         </li>
-                        <li class="nav-item ms-4">
+                        <li class="nav-item">
                             <a class="navTitles" href="https://www.linkedin.com/in/rafael-fagundes-518974258"
                                 target="_blank" onclick="successTransition('Linkedin', event)">
                                 <i class='bx bxl-linkedin fs-2'></i>
                             </a>
                         </li>
-                        <li class="nav-item ms-4">
-                            <a class="navTitles " href="https://www.instagram.com/fagundes.icm/?hl=pt-br"
+                        <li class="nav-item">
+                            <a class="navTitles" href="https://www.instagram.com/fagundes.icm/?hl=pt-br"
                                 target="_blank" onclick="successTransition('Instagram', event)">
                                 <i class='bx bxl-instagram fs-2'></i>
                             </a>
                         </li>
-                        <li class="nav-item ms-4">
+                        <li class="nav-item">
                             <a class="navTitles" href="https://github.com/FalconTFagundes" target="_blank"
                                 onclick="successTransition('Github', event)">
                                 <i class='bx bxl-github fs-2'></i>
                             </a>
                         </li>
-                        <li class="nav-item ms-4">
+                        <li class="nav-item">
                             <a class="navTitles" href="https://www.facebook.com/profile.php?id=100013959692622"
                                 target="_blank" onclick="successTransition('Facebook', event)">
                                 <i class='bx bxl-facebook fs-2'></i>
                             </a>
                         </li>
-
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
 
-    <div>
-        <div class="container-fluid shadow-custom py-5">
-            <div class="container text-center">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div id="hero-section-about">
-                            <div class="hero-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="2000">
-                                <h1 id="tituloAbout" class="fw-bold mb-4">Sobre mim.</h1>
-                                <p class="fs-5 textoAbout">
-                                    Aqui você encontrará um pouco sobre minha trajetória profissional e pessoal.
-                                    Irei compartilhar interesses e aspectos do meu dia a dia, com fotos e detalhes
-                                    que mostram um pouco mais sobre quem sou e o que me motiva.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center" data-aos="fade-right" data-aos-duration="1500"
-                        data-aos-delay="2000">
-                        <img src="../assets/img/about/rafaelAbout.png" id="aboutImg" alt="Rafael Fagundes"
-                            class="img-fluid rounded">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <p class="font-monospace fs-5 mt-5 text-center text-custom" data-aos="fade-up" data-aos-duration="1000"> QUEM É
-            RAFAEL?</p>
-
-        <!-- cards de imagens -->
-        <div class="card-group" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_10.jpg" class="card-img"
-                    alt="Explicando sobre trabalho curso técnico">
-                <div class="card-body card-body-about">
-                    <h6 class="card-title">Técnico em Desenvolvimento de Sistemas</h6>
-                    <p class="card-text">Ensinar é crescer junto.</p>
-
-                </div>
-            </div>
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_8.jpg" class="card-img" alt="Um pouco de pedal">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">Ciclista</h5>
-                    <p class="card-text">Duas rodas, mil histórias.</p>
-
-                </div>
-            </div>
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_18.jpg" class="card-img" alt="Amor da minha vida">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">Comprometido</h5>
-                    <p class="card-text">Criando um futuro sólido com união.</p>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="card-group" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_1.jpg" class="card-img" alt="Formação brigadista">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">Brigadista</h5>
-                    <p class="card-text">Mundo mais seguro, com amor à vida.</p>
-
-                </div>
-            </div>
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_31.jpg" class="card-img" alt="MARANATA!">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">Servo do Senhor</h5>
-                    <p class="card-text">Maranata! Ora vem Senhor Jesus.</p>
-                </div>
-            </div>
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_7.jpg" class="card-img" alt="Inspirado por professores">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">Apaixonado por Educação</h5>
-                    <p class="card-text">Professores são fontes de inspiração.</p>
-
-                </div>
-            </div>
-
-        </div>
-        <hr style="border: 1px solid black;"> <br>
-        <div class="container-fluid marginBAbout d-flex flex-wrap w-75 gap-4" data-aos="fade-left"
-            data-aos-duration="1500" data-aos-delay="300">
-            <img src="../assets/img/about/about_12.jpg" class="rounded" alt="Estudo Pesado"
-                style="max-width: 100%; height: auto;">
-            <div class="textContainer rounded">
-                <h1 class="titleConteudoAbout">Quem sou eu?</h1>
-                <p class="textoConteudoAbout">
-                    Olá! Meu nome é Rafael Fagundes, e é um prazer tê-lo em meu portfólio. Atualmente, sou
-                    estudante de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em
-                    Desenvolvimento de Sistemas. Sou um jovem em constante busca pelo aperfeiçoamento profissional,
-                    sempre empenhado em expandir meus conhecimentos. Considero-me uma pessoa dedicada e atenta,
-                    enfrentando, e superando rotinas intensas e desafiadoras entre estudos e trabalho...
-                </p>
-            </div>
-            <button type="button" class="btn btn-primary btnVerMais mt-3" data-bs-toggle="modal"
-                data-bs-target="#modalQuemSou">
-                Ver mais
-            </button>
-        </div>
-
-        <!-- Modal Quem sou eu -->
-        <div class="modal fade" id="modalQuemSou" tabindex="-1" aria-labelledby="modalQuemSouLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="modalQuemSouLabel">Quem sou eu?</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Olá! Meu nome é Rafael Fagundes, e é um prazer tê-lo em meu portfólio. Atualmente, sou
-                            estudante de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em
-                            Desenvolvimento de Sistemas. Sou um jovem em constante busca pelo aperfeiçoamento
-                            profissional,
-                            sempre empenhado em expandir meus conhecimentos. Considero-me uma pessoa dedicada e atenta,
-                            enfrentando e superando rotinas intensas e desafiadoras entre estudos e trabalho...
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container-fluid marginBAbout d-flex flex-wrap-reverse w-75 gap-4" data-aos="fade-right"
-            data-aos-duration="1500" data-aos-delay="300">
-            <div class="textContainer rounded">
-                <h1 class="titleConteudoAbout">Pelo que já passei?</h1>
-                <p class="textoConteudoAbout">
-                    Desde cedo, enfrentei rotinas desafiadoras que me ajudaram a desenvolver disciplina e
-                    resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a escola
-                    e, à tarde, conciliava trabalho e estudos no SEST SENAT. Sempre levava minha marmita na
-                    bolsa, o que nem sempre era fácil, às vezes, as condições do dia faziam com que a comida
-                    azedasse, me ensinando a lidar com imprevistos e a me adaptar às circunstâncias.
-                    <br><br>
-                    Após o trabalho ou o SEST SENAT, meu dia ainda estava longe de acabar. Às 19h, eu iniciava
-                    as aulas no SENAI, onde cursava Técnico em Desenvolvimento de Sistemas até as 22h30. A
-                    escola ficava longe de casa, e, sem outro meio de transporte, eu fazia todo esse trajeto de
-                    bicicleta, pedalando o dia inteiro. Quando finalmente chegava em casa, ainda precisava
-                    dedicar tempo aos trabalhos avaliativos da escola e do SENAI, o que muitas vezes me
-                    deixava com pouquíssimas horas de sono.
-                    <br><br>
-                    Foi um período intenso, mas que moldou minha determinação e minha paixão por tecnologia.
-                    Hoje, levo comigo essa mesma dedicação em tudo o que faço.
-                </p>
-
-            </div>
-            <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
-                data-bs-target="#modalPeloQuePassei">
-                Ver mais
-            </button>
-            <img src="../assets/img/about/about_9.jpg" class="rounded" alt="Desafios Enfrentados"
-                style="max-width: 100%; height: auto;">
-        </div>
-
-        <!-- Modal Pelo que já passei -->
-        <div class="modal fade" id="modalPeloQuePassei" tabindex="-1" aria-labelledby="modalPeloQuePasseiLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="modalPeloQuePasseiLabel">Pelo que já passei?</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Desde cedo, enfrentei rotinas desafiadoras que me ajudaram a desenvolver disciplina e
-                            resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a escola
-                            e, à tarde, conciliava trabalho e estudos no SEST SENAT. Sempre levava minha marmita na
-                            bolsa, o que nem sempre era fácil, às vezes, as condições do dia faziam com que a comida
-                            azedasse, me ensinando a lidar com imprevistos e a me adaptar às circunstâncias.
-                            <br><br>
-                            Após o trabalho ou o SEST SENAT, meu dia ainda estava longe de acabar. Às 19h, eu
-                            iniciava as aulas no SENAI, onde cursava Técnico em Desenvolvimento de Sistemas até as
-                            22h30. A
-                            escola ficava longe de casa, e, sem outro meio de transporte, eu fazia todo esse trajeto
-                            de bicicleta, pedalando o dia inteiro. Quando finalmente chegava em casa, ainda precisava
-                            dedicar tempo aos trabalhos avaliativos da escola e do SENAI, o que muitas vezes me
-                            deixava com pouquíssimas horas de sono.
-                            <br><br>
-                            Foi um período intenso, mas que moldou minha determinação e minha paixão por tecnologia.
-                            Hoje, levo comigo essa mesma dedicação em tudo o que faço.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container-fluid marginBAbout d-flex flex-wrap w-75 gap-4" data-aos="fade-left"
-            data-aos-duration="1500" data-aos-delay="300">
-            <img src="../assets/img/about/about_15.jpg" class="rounded"
-                alt="Apresentação TCC Técnico em Desenvolvimento de Sistemas" style="max-width: 100%; height: auto;">
-            <div class="textContainer rounded">
-                <h1 class="titleConteudoAbout">Onde quero chegar?</h1>
-                <p class="textoConteudoAbout">
-                    Meu maior objetivo é tornar-me professor de tecnologia, compartilhando conhecimento
-                    e contribuindo para a formação de novos profissionais na área. Sempre fui
-                    apaixonado por aprender e ensinar, e acredito que a educação é o caminho para
-                    transformar
-                    vidas e impulsionar o desenvolvimento profissional.
-                    Busco constantemente aprimorar minhas habilidades técnicas e didáticas para oferecer um
-                    ensino de qualidade, baseado em prática e inovação. Com minha experiência em
-                    Desenvolvimento
-                    de Sistemas e minha trajetória acadêmica em Ciência da Computação, desejo capacitar
-                    futuros
-                    profissionais, tornando a tecnologia mais acessível e compreensível para todos.
-                    <br><br>
-                    Estou comprometido em evoluir continuamente, tanto como profissional quanto como
-                    educador,
-                    para fazer a diferença na vida de meus alunos e no mercado de tecnologia.
-                </p>
-
-            </div>
-            <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
-                data-bs-target="#modalOndeQueroChegar">
-                Ver mais
-            </button>
-        </div>
-
-        <!-- Modal Onde quero chegar -->
-        <div class="modal fade" id="modalOndeQueroChegar" tabindex="-1" aria-labelledby="modalOndeQueroChegarLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="modalOndeQueroChegarLabel">Onde quero chegar?</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Meu maior objetivo é tornar-me professor de tecnologia, compartilhando conhecimento
-                            e contribuindo para a formação de novos profissionais na área. Sempre fui
-                            apaixonado por aprender e ensinar, e acredito que a educação é o caminho para
-                            transformar
-                            vidas e impulsionar o desenvolvimento profissional.
-                            Busco constantemente aprimorar minhas habilidades técnicas e didáticas para oferecer um
-                            ensino de qualidade, baseado em prática e inovação. Com minha experiência em
-                            Desenvolvimento
-                            de Sistemas e minha trajetória acadêmica em Ciência da Computação, desejo capacitar
-                            futuros
-                            profissionais, tornando a tecnologia mais acessível e compreensível para todos.
-                            <br><br>
-                            Estou comprometido em evoluir continuamente, tanto como profissional quanto como
-                            educador,
-                            para fazer a diferença na vida de meus alunos e no mercado de tecnologia.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid marginBAbout d-flex flex-wrap-reverse w-75 gap-4" data-aos="fade-right"
-            data-aos-duration="1500" data-aos-delay="300">
-            <div class="textContainer rounded">
-                <h1 class="titleConteudoAbout">O que já conquistei?</h1>
-                <p class="textoConteudoAbout">
-                    Ao longo da minha trajetória, cada desafio enfrentado foi um passo rumo às minhas conquistas. Hoje,
-                    tenho meu próprio veículo, certificações que comprovam minha dedicação aos estudos, incluindo
-                    reconhecimentos como aluno destaque e cursos concluídos com excelência. Meus esforços também
-                    renderam notas máximas em trabalhos avaliativos, além de uma medalha e prêmios que simbolizam minha
-                    busca constante por evolução.
-                    <br><br>
-                    Além disso, conquistei uma vaga como Operador de Sistemas de Informática na empresa BigCard, uma
-                    área em que as oportunidades são muito disputadas. O processo seletivo foi desafiador, com mais de
-                    25 candidatos concorrendo, mas minha preparação e perseverança me levaram à aprovação. Essa
-                    conquista representa não apenas minha capacidade técnica, mas também minha determinação em alcançar
-                    meus objetivos.
-                </p>
-
-            </div>
-            <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
-                data-bs-target="#modalConquistei">
-                Ver mais
-            </button>
-            <img src="../assets/img/about/about_30.jpg" class="rounded" alt="BigCard"
-                style="max-width: 100%; height: auto;">
-        </div>
-
-
-        <!-- Modal o que já conquistei p/ mobile -->
-        <div class="modal fade" id="modalConquistei" tabindex="-1" aria-labelledby="modalConquistei" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="modalConquistei">O que já conquistei?</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Ao longo da minha trajetória, cada desafio enfrentado foi um passo rumo às minhas
-                            conquistas. Hoje, tenho meu próprio veículo, certificações que comprovam minha dedicação
-                            aos
-                            estudos, incluindo reconhecimentos como aluno destaque e cursos concluídos com
-                            excelência.
-                            Meus esforços também renderam notas máximas em trabalhos avaliativos, além de uma
-                            medalha e
-                            prêmios que simbolizam minha busca constante por evolução.
-                            <br><br>
-                            Além disso, conquistei uma vaga como Operador de Sistemas de Informática na empresa
-                            BigCard,
-                            uma
-                            área em que as oportunidades são muito disputadas. O processo seletivo foi desafiador,
-                            com mais de 25 candidatos concorrendo, mas minha preparação e perseverança me
-                            levaram à aprovação. Essa conquista representa não apenas minha capacidade técnica, mas
-                            também minha determinação em alcançar meus objetivos.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <p class="font-monospace fs-5 mt-5 text-center text-custom" data-aos="zoom-in" data-aos-duration="1500">MINHAS
-            HABILIDADES</p>
-
-        <!-- gráfico -->
-        <canvas id="techSkillsChart" width="300" height="100" data-aos="fade-up" data-aos-duration="1000"
-            data-aos-delay="100"></canvas>
-
-        <!-- sessão leitura -->
-
-        <div class="container-fluid shadow-custom">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="hero-section">
-                            <div class="hero-text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
-
-                                <h1 id="tituloAbout">Leitura </h1>
-                                <p class="fs-5 textoAbout">Compartilho aqui livros que marcaram minha trajetória,
-                                    seja no crescimento profissional ou pessoal. Espero que eles agreguem tanto para
-                                    você quanto agregaram para mim!
-                                </p>
-                            </div>
-
-                            <div class="hero-image moving-element" data-aos="fade-right" data-aos-duration="1500"
-                                data-aos-delay="300">
-                                <img src="../assets/img/about/about_20.jpg" class="rafaelAbout"
-                                    alt="Leitura Recomendada" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <p class="font-monospace fs-5 mt-5 text-center text-custom" data-aos="fade-up" data-aos-duration="1000"> LIVROS
-        </p>
-
-        <!-- cards de livros -->
-
-        <div class="card-group" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_27.jpg" class="card-img" alt="...">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">Bíblia Sagrada</h5>
-                    <h7 class="card-title">Deus</h7>
-                    <p class="card-text">A palavra de Deus é viva e eficaz [...] "Hebreus 4:12".</p>
-
-                </div>
-            </div>
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_21.jpg" class="card-img" alt="...">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">A vida intelectual</h5>
-                    <h7 class="card-title">A.-D Sertillanges</h7>
-                    <p class="card-text">Seu espírito, suas condições, seus métodos.</p>
-                </div>
-            </div>
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_26.jpg" class="card-img" alt="...">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">Ciência e Fé</h5>
-                    <h7 class="card-title">Fábio Lúcio Soares Gomes - ICM</h7>
-                    <p class="card-text">A ciência nos conecta a criação, e a fé ao Criador.</p>
-                </div>
-            </div>
-        </div>
-        <!-- segundo grupo de cards -->
-        <div class="card-group" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_29.jpg" class="card-img" alt="...">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">O Codificador Limpo</h5>
-                    <h7 class="card-title">Robert C. Martin</h7>
-                    <p class="card-text">O código limpo é aquele que um ser humano entende.</p>
-                </div>
-            </div>
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_28.jpg" class="card-img" alt="...">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">Do Mil ao Milhão</h5>
-                    <h7 class="card-title">Thiago Nigro</h7>
-                    <p class="card-text">Quem não aprende a investir, fica para trás.</p>
-                </div>
-            </div>
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_23.jpg" class="card-img" alt="...">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">O Príncipe</h5>
-                    <h7 class="card-title">Nicolau Maquiavel</h7>
-                    <p class="card-text">Os fins justificam os meios.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- terceiro grupo de cards -->
-
-        <div class="card-group" data-aos="fade-up" data-aos-duration="1000">
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_25.jpg" class="card-img" alt="...">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">Mais Esperto que o Diabo</h5>
-                    <h7 class="card-title">Napoleon Hill</h7>
-                    <p class="card-text">O medo é o maior inimigo do sucesso.</p>
-                </div>
-            </div>
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_24.jpg" class="card-img" alt="...">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">A Arte da Guerra</h5>
-                    <h7 class="card-title">Sun Tzu</h7>
-                    <p class="card-text">Conheça o inimigo e a si mesmo.</p>
-                </div>
-            </div>
-            <div class="card cardAbout">
-                <img src="../assets/img/about/about_22.jpg" class="card-img" alt="...">
-                <div class="card-body card-body-about">
-                    <h5 class="card-title">Aliança com Deus</h5>
-                    <h7 class="card-title">R. R. Soares</h7>
-                    <p class="card-text">A aliança com Deus traz bênçãos.</p>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-        </main>
-
-
-
-        <footer class="text-justify ">
+    <main>
+        <section class="page-hero">
             <div class="container">
-                <p class="footer-contet">&copy; 2025 Rafael Fagundes</p>
+                <div class="page-hero-content" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="page-hero-text">
+                        <h1>Sobre mim.</h1>
+                        <p>Aqui você encontrará um pouco sobre minha trajetória profissional e pessoal. Irei compartilhar interesses e aspectos do meu dia a dia, com fotos e detalhes que mostram um pouco mais sobre quem sou e o que me motiva.</p>
+                    </div>
+                    <div class="page-hero-image">
+                        <img src="../assets/img/about/rafaelAbout.png" alt="Rafael Fagundes" class="img-fluid">
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Ícones sociais -->
-            <div class="social-links" id="social-links-id">
-                <a class="social-links" href="https://www.linkedin.com/in/rafael-fagundes-518974258" target="_blank"
-                    onclick="successTransition('Linkedin', event)">
-                    <i class='bx bxl-linkedin fs-2'></i>
-                </a>
-                <a class="social-links" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank"
-                    onclick="successTransition('Instagram', event)">
-                    <i class='bx bxl-instagram fs-2 ms-3'></i>
-                </a>
-                <a class="social-links" href="https://github.com/FalconTFagundes" target="_blank"
-                    onclick="successTransition('Github', event)">
-                    <i class='bx bxl-github fs-2 ms-3'></i>
-                </a>
-                <a class="social-links" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank"
-                    onclick="successTransition('Facebook', event)">
-                    <i class='bx bxl-facebook fs-2 ms-3'></i>
-                </a>
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down" data-aos-duration="1500">QUEM É RAFAEL?</h2>
+
+                <!-- Cards de características -->
+                <div class="row mb-5" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_10.jpg" class="about-card-img" alt="Técnico em Desenvolvimento de Sistemas">
+                            <div class="about-card-body">
+                                <h6 class="about-card-title">Técnico em Desenvolvimento de Sistemas</h6>
+                                <p class="about-card-text">Ensinar é crescer junto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_8.jpg" class="about-card-img" alt="Ciclista">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">Ciclista</h5>
+                                <p class="about-card-text">Duas rodas, mil histórias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_18.jpg" class="about-card-img" alt="Comprometido">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">Comprometido</h5>
+                                <p class="about-card-text">Criando um futuro sólido com união.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_1.jpg" class="about-card-img" alt="Brigadista">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">Brigadista</h5>
+                                <p class="about-card-text">Mundo mais seguro, com amor à vida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_31.jpg" class="about-card-img" alt="Servo do Senhor">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">Servo do Senhor</h5>
+                                <p class="about-card-text">Maranata! Ora vem Senhor Jesus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_7.jpg" class="about-card-img" alt="Apaixonado por Educação">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">Apaixonado por Educação</h5>
+                                <p class="about-card-text">Professores são fontes de inspiração.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Seção Quem sou eu -->
+                <div class="content-block" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="content-image">
+                        <img src="../assets/img/about/about_12.jpg" alt="Estudo Pesado">
+                    </div>
+                    <div class="content-text">
+                        <h1>Quem sou eu?</h1>
+                        <p class="textoConteudoAbout">
+                            Olá! Meu nome é Rafael Fagundes, e é um prazer tê-lo em meu portfólio. Atualmente, sou estudante de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em Desenvolvimento de Sistemas. Sou um jovem em constante busca pelo aperfeiçoamento profissional, sempre empenhado em expandir meus conhecimentos. Considero-me uma pessoa dedicada e atenta, enfrentando, e superando rotinas intensas e desafiadoras entre estudos e trabalho...
+                        </p>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal" data-bs-target="#modalQuemSou">Ver mais</button>
+                    </div>
+                </div>
+
+                <!-- Seção Pelo que já passei -->
+                <div class="content-block reverse" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="content-image">
+                        <img src="../assets/img/about/about_9.jpg" alt="Desafios Enfrentados">
+                    </div>
+                    <div class="content-text">
+                        <h1>Pelo que já passei?</h1>
+                        <p class="textoConteudoAbout">
+                            Desde cedo, enfrentei rotinas desafiadoras que me ajudaram a desenvolver disciplina e resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a escola e, à tarde, conciliava trabalho e estudos no SEST SENAT. Sempre levava minha marmita na bolsa, o que nem sempre era fácil, às vezes, as condições do dia faziam com que a comida azedasse, me ensinando a lidar com imprevistos e a me adaptar às circunstâncias...
+                        </p>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal" data-bs-target="#modalPeloQuePassei">Ver mais</button>
+                    </div>
+                </div>
+
+                <!-- Seção Onde quero chegar -->
+                <div class="content-block" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="content-image">
+                        <img src="../assets/img/about/about_15.jpg" alt="Apresentação TCC">
+                    </div>
+                    <div class="content-text">
+                        <h1>Onde quero chegar?</h1>
+                        <p class="textoConteudoAbout">
+                            Meu maior objetivo é tornar-me professor de tecnologia, compartilhando conhecimento e contribuindo para a formação de novos profissionais na área. Sempre fui apaixonado por aprender e ensinar, e acredito que a educação é o caminho para transformar vidas e impulsionar o desenvolvimento profissional...
+                        </p>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal" data-bs-target="#modalOndeQueroChegar">Ver mais</button>
+                    </div>
+                </div>
+
+                <!-- Seção O que já conquistei -->
+                <div class="content-block reverse" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="content-image">
+                        <img src="../assets/img/about/about_30.jpg" alt="BigCard">
+                    </div>
+                    <div class="content-text">
+                        <h1>O que já conquistei?</h1>
+                        <p class="textoConteudoAbout">
+                            Ao longo da minha trajetória, cada desafio enfrentado foi um passo rumo às minhas conquistas. Hoje, tenho meu próprio veículo, certificações que comprovam minha dedicação aos estudos, incluindo reconhecimentos como aluno destaque e cursos concluídos com excelência. Meus esforços também renderam notas máximas em trabalhos avaliativos, além de uma medalha e prêmios que simbolizam minha busca constante por evolução...
+                        </p>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal" data-bs-target="#modalConquistei">Ver mais</button>
+                    </div>
+                </div>
+
+                <!-- Gráfico de habilidades -->
+                <h2 class="section-title" data-aos="zoom-in" data-aos-duration="1500">MINHAS HABILIDADES</h2>
+                <canvas id="techSkillsChart" data-aos="fade-up" data-aos-duration="1000"></canvas>
+
+                <div class="divider"></div>
+
+                <!-- Seção de Leitura -->
+                <div class="content-block" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="content-text">
+                        <h1>Leitura</h1>
+                        <p>Compartilho aqui livros que marcaram minha trajetória, seja no crescimento profissional ou pessoal. Espero que eles agreguem tanto para você quanto agregaram para mim!</p>
+                    </div>
+                    <div class="content-image moving-element">
+                        <img src="../assets/img/about/about_20.jpg" alt="Leitura Recomendada" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Cards de Livros -->
+                <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">LIVROS</h2>
+                
+                <div class="row mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_27.jpg" class="about-card-img" alt="Bíblia Sagrada">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">Bíblia Sagrada</h5>
+                                <h7 class="about-card-title">Deus</h7>
+                                <p class="about-card-text">A palavra de Deus é viva e eficaz [...] "Hebreus 4:12".</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_21.jpg" class="about-card-img" alt="A vida intelectual">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">A vida intelectual</h5>
+                                <h7 class="about-card-title">A.-D Sertillanges</h7>
+                                <p class="about-card-text">Seu espírito, suas condições, seus métodos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_26.jpg" class="about-card-img" alt="Ciência e Fé">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">Ciência e Fé</h5>
+                                <h7 class="about-card-title">Fábio Lúcio Soares Gomes - ICM</h7>
+                                <p class="about-card-text">A ciência nos conecta a criação, e a fé ao Criador.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_29.jpg" class="about-card-img" alt="O Codificador Limpo">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">O Codificador Limpo</h5>
+                                <h7 class="about-card-title">Robert C. Martin</h7>
+                                <p class="about-card-text">O código limpo é aquele que um ser humano entende.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_28.jpg" class="about-card-img" alt="Do Mil ao Milhão">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">Do Mil ao Milhão</h5>
+                                <h7 class="about-card-title">Thiago Nigro</h7>
+                                <p class="about-card-text">Quem não aprende a investir, fica para trás.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_23.jpg" class="about-card-img" alt="O Príncipe">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">O Príncipe</h5>
+                                <h7 class="about-card-title">Nicolau Maquiavel</h7>
+                                <p class="about-card-text">Os fins justificam os meios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_25.jpg" class="about-card-img" alt="Mais Esperto que o Diabo">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">Mais Esperto que o Diabo</h5>
+                                <h7 class="about-card-title">Napoleon Hill</h7>
+                                <p class="about-card-text">O medo é o maior inimigo do sucesso.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_24.jpg" class="about-card-img" alt="A Arte da Guerra">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">A Arte da Guerra</h5>
+                                <h7 class="about-card-title">Sun Tzu</h7>
+                                <p class="about-card-text">Conheça o inimigo e a si mesmo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="about-card">
+                            <img src="../assets/img/about/about_22.jpg" class="about-card-img" alt="Aliança com Deus">
+                            <div class="about-card-body">
+                                <h5 class="about-card-title">Aliança com Deus</h5>
+                                <h7 class="about-card-title">R. R. Soares</h7>
+                                <p class="about-card-text">A aliança com Deus traz bênçãos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </section>
+    </main>
 
+    <!-- Modais -->
+    <!-- Modal Quem sou eu -->
+    <div class="modal fade" id="modalQuemSou" tabindex="-1" aria-labelledby="modalQuemSouLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalQuemSouLabel">Quem sou eu?</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Olá! Meu nome é Rafael Fagundes, e é um prazer tê-lo em meu portfólio. Atualmente, sou estudante de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em Desenvolvimento de Sistemas. Sou um jovem em constante busca pelo aperfeiçoamento profissional, sempre empenhado em expandir meus conhecimentos. Considero-me uma pessoa dedicada e atenta, enfrentando e superando rotinas intensas e desafiadoras entre estudos e trabalho...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal Pelo que já passei -->
+    <div class="modal fade" id="modalPeloQuePassei" tabindex="-1" aria-labelledby="modalPeloQuePasseiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalPeloQuePasseiLabel">Pelo que já passei?</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Desde cedo, enfrentei rotinas desafiadoras que me ajudaram a desenvolver disciplina e resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a escola e, à tarde, conciliava trabalho e estudos no SEST SENAT. Sempre levava minha marmita na bolsa, o que nem sempre era fácil, às vezes, as condições do dia faziam com que a comida azedasse, me ensinando a lidar com imprevistos e a me adaptar às circunstâncias.
+                        <br><br>
+                        Após o trabalho ou o SEST SENAT, meu dia ainda estava longe de acabar. Às 19h, eu iniciava as aulas no SENAI, onde cursava Técnico em Desenvolvimento de Sistemas até as 22h30. A escola ficava longe de casa, e, sem outro meio de transporte, eu fazia todo esse trajeto de bicicleta, pedalando o dia inteiro. Quando finalmente chegava em casa, ainda precisava dedicar tempo aos trabalhos avaliativos da escola e do SENAI, o que muitas vezes me deixava com pouquíssimas horas de sono.
+                        <br><br>
+                        Foi um período intenso, mas que moldou minha determinação e minha paixão por tecnologia. Hoje, levo comigo essa mesma dedicação em tudo o que faço.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- JS -->
-        <script src="../assets/js/func.js"></script>
+    <!-- Modal Onde quero chegar -->
+    <div class="modal fade" id="modalOndeQueroChegar" tabindex="-1" aria-labelledby="modalOndeQueroChegarLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalOndeQueroChegarLabel">Onde quero chegar?</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Meu maior objetivo é tornar-me professor de tecnologia, compartilhando conhecimento e contribuindo para a formação de novos profissionais na área. Sempre fui apaixonado por aprender e ensinar, e acredito que a educação é o caminho para transformar vidas e impulsionar o desenvolvimento profissional. Busco constantemente aprimorar minhas habilidades técnicas e didáticas para oferecer um ensino de qualidade, baseado em prática e inovação. Com minha experiência em Desenvolvimento de Sistemas e minha trajetória acadêmica em Ciência da Computação, desejo capacitar futuros profissionais, tornando a tecnologia mais acessível e compreensível para todos.
+                        <br><br>
+                        Estou comprometido em evoluir continuamente, tanto como profissional quanto como educador, para fazer a diferença na vida de meus alunos e no mercado de tecnologia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Linkk bootstrap js + popper -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-            crossorigin="anonymous"></script>
+    <!-- Modal O que já conquistei -->
+    <div class="modal fade" id="modalConquistei" tabindex="-1" aria-labelledby="modalConquisteiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalConquisteiLabel">O que já conquistei?</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Ao longo da minha trajetória, cada desafio enfrentado foi um passo rumo às minhas conquistas. Hoje, tenho meu próprio veículo, certificações que comprovam minha dedicação aos estudos, incluindo reconhecimentos como aluno destaque e cursos concluídos com excelência. Meus esforços também renderam notas máximas em trabalhos avaliativos, além de uma medalha e prêmios que simbolizam minha busca constante por evolução.
+                        <br><br>
+                        Além disso, conquistei uma vaga como Operador de Sistemas de Informática na empresa BigCard, uma área em que as oportunidades são muito disputadas. O processo seletivo foi desafiador, com mais de 25 candidatos concorrendo, mas minha preparação e perseverança me levaram à aprovação. Essa conquista representa não apenas minha capacidade técnica, mas também minha determinação em alcançar meus objetivos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Chart JS -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-contet">&copy; 2025 Rafael Fagundes</p>
+                </div>
+                <div class="col-md-6 text-md-end" id="social-links-id">
+                    <a class="social-links" href="https://www.linkedin.com/in/rafael-fagundes-518974258" target="_blank"
+                        onclick="successTransition('Linkedin', event)">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a class="social-links" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank"
+                        onclick="successTransition('Instagram', event)">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a class="social-links" href="https://github.com/FalconTFagundes" target="_blank"
+                        onclick="successTransition('Github', event)">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a class="social-links" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank"
+                        onclick="successTransition('Facebook', event)">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- JS -->
+    <script src="../assets/js/func.js"></script>
 
-        <!-- sweetalert -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 
-        <!-- AOS Animation JS -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-        <!-- Iniciando o AOS Animation -->
-        <script>
-            AOS.init(); 
-        </script>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var ctx = document.getElementById('techSkillsChart').getContext('2d');
-                var techSkillsChart = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: ['PHP', 'JavaScript', 'CSS', 'HTML', 'MySQL'],
-                        datasets: [{
-                            label: 'Meu nível de Habilidade',
-                            data: [90, 60, 70, 80, 60, 85],
-                            backgroundColor: [
-                                'rgba(153, 102, 255, 0.3)',
-                                'rgba(255, 205, 86, 0.3)',
-                                'rgba(75, 192, 192, 0.3)',
-                                'rgba(169, 169, 169, 0.3)',
-                                'rgba(0, 0, 139, 0.3)'
-                            ],
-                            borderColor: [
-                                'rgba(153, 102, 255, 1)',
-                                'rgba(255, 205, 86, 1)',
-                                'rgba(75, 192, 192, 1)',
-                                'rgba(169, 169, 169, 1)',
-                                'rgba(0, 0, 139, 1)'
-                            ],
-                            borderWidth: 2
-                        }]
+    <script>
+        AOS.init();
+
+        // Efeito de scroll no header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // Chart.js para habilidades
+         const ctx = document.getElementById('techSkillsChart').getContext('2d');
+        const techSkillsChart = new Chart(ctx, {
+            type: 'bar', // você pode trocar para 'radar', 'doughnut', 'line', etc.
+            data: {
+                labels: ['PHP', 'JavaScript', 'Bootstrap', 'Python', 'SQL'],
+                datasets: [{
+                    label: 'Nível de habilidade (%)',
+                    data: [95, 60, 90, 65, 75],
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    borderRadius: 10
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false 
                     },
-                    options: {
-                        responsive: true,
-                        plugins: {
-                            legend: {
-                                position: 'top',
-                            },
-                            tooltip: {
-                                enabled: true,
-                                backgroundColor: 'rgba(0,0,0,0.7)',
-                                bodyColor: '#fff'
-                            }
-                        },
-                        scales: {
-                            y: {
-                                beginAtZero: true,
-                                ticks: {
-                                    stepSize: 10,
-                                    max: 100
-                                },
-                                grid: {
-                                    color: '#ddd',
-                                    borderColor: '#bbb'
-                                }
-                            },
-                            x: {
-                                grid: {
-                                    display: false,
-                                }
+                    tooltip: {
+                        backgroundColor: '#000',
+                        titleColor: '#fff',
+                        bodyColor: '#fff'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%';
                             }
                         }
                     }
-                });
-            });
-        </script>
-
-
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
