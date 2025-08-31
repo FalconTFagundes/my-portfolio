@@ -64,7 +64,7 @@
             }
         }
 
-      .navbar {
+        .navbar {
             padding: 1rem 0;
             border: none;
         }
@@ -75,7 +75,7 @@
         @media (max-width: 768px) {
             .navbar {
                 padding: 0.5rem 0;
-                
+
             }
         }
 
@@ -98,20 +98,22 @@
         }
 
         .navTitles {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             color: #ffffff;
             transition: all 0.3s ease;
             font-size: 0.9rem;
             font-weight: 500;
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
-            padding: 0.8rem 1.5rem;
+            padding: 0.4rem 1rem;
             border-radius: 25px;
         }
 
         .navTitles:hover {
             color: #000000;
             background-color: #ffffff;
-            transform: translateY(-2px);
         }
 
         /* Main content com espaçamento para header fixo */
@@ -338,8 +340,15 @@
 
         /* Animações */
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         .moving-element {
@@ -370,7 +379,8 @@
                 font-size: 2.2rem;
             }
 
-            .content-block, .content-block.reverse {
+            .content-block,
+            .content-block.reverse {
                 flex-direction: column;
                 text-align: center;
                 gap: 3rem;
@@ -468,8 +478,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="navTitles" href="https://www.instagram.com/fagundes.icm/?hl=pt-br"
-                                target="_blank" onclick="successTransition('Instagram', event)">
+                            <a class="navTitles" href="https://www.instagram.com/fagundes.icm/?hl=pt-br" target="_blank"
+                                onclick="successTransition('Instagram', event)">
                                 <i class='bx bxl-instagram fs-2'></i>
                             </a>
                         </li>
@@ -497,7 +507,9 @@
                 <div class="page-hero-content" data-aos="fade-up" data-aos-duration="1500">
                     <div class="page-hero-text">
                         <h1>Sobre mim.</h1>
-                        <p>Aqui você encontrará um pouco sobre minha trajetória profissional e pessoal. Irei compartilhar interesses e aspectos do meu dia a dia, com fotos e detalhes que mostram um pouco mais sobre quem sou e o que me motiva.</p>
+                        <p>Aqui você encontrará um pouco sobre minha trajetória profissional e pessoal. Irei
+                            compartilhar interesses e aspectos do meu dia a dia, com fotos e detalhes que mostram um
+                            pouco mais sobre quem sou e o que me motiva.</p>
                     </div>
                     <div class="page-hero-image">
                         <img src="../assets/img/about/rafaelAbout.png" alt="Rafael Fagundes" class="img-fluid">
@@ -514,7 +526,8 @@
                 <div class="row mb-5" data-aos="fade-up" data-aos-duration="1000">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="about-card">
-                            <img src="../assets/img/about/about_10.jpg" class="about-card-img" alt="Técnico em Desenvolvimento de Sistemas">
+                            <img src="../assets/img/about/about_10.jpg" class="about-card-img"
+                                alt="Técnico em Desenvolvimento de Sistemas">
                             <div class="about-card-body">
                                 <h6 class="about-card-title">Técnico em Desenvolvimento de Sistemas</h6>
                                 <p class="about-card-text">Ensinar é crescer junto.</p>
@@ -562,7 +575,8 @@
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="about-card">
-                            <img src="../assets/img/about/about_7.jpg" class="about-card-img" alt="Apaixonado por Educação">
+                            <img src="../assets/img/about/about_7.jpg" class="about-card-img"
+                                alt="Apaixonado por Educação">
                             <div class="about-card-body">
                                 <h5 class="about-card-title">Apaixonado por Educação</h5>
                                 <p class="about-card-text">Professores são fontes de inspiração.</p>
@@ -581,9 +595,15 @@
                     <div class="content-text">
                         <h1>Quem sou eu?</h1>
                         <p class="textoConteudoAbout">
-                            Olá! Meu nome é Rafael Fagundes, e é um prazer tê-lo em meu portfólio. Atualmente, sou estudante de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em Desenvolvimento de Sistemas. Sou um jovem em constante busca pelo aperfeiçoamento profissional, sempre empenhado em expandir meus conhecimentos. Considero-me uma pessoa dedicada e atenta, enfrentando, e superando rotinas intensas e desafiadoras entre estudos e trabalho...
+                            Olá! Meu nome é Rafael Fagundes, e é um prazer tê-lo em meu portfólio. Atualmente, sou
+                            estudante de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em
+                            Desenvolvimento de Sistemas. Sou um jovem em constante busca pelo aperfeiçoamento
+                            profissional, sempre empenhado em expandir meus conhecimentos. Considero-me uma pessoa
+                            dedicada e atenta, enfrentando, e superando rotinas intensas e desafiadoras entre estudos e
+                            trabalho...
                         </p>
-                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal" data-bs-target="#modalQuemSou">Ver mais</button>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
+                            data-bs-target="#modalQuemSou">Ver mais</button>
                     </div>
                 </div>
 
@@ -595,9 +615,14 @@
                     <div class="content-text">
                         <h1>Pelo que já passei?</h1>
                         <p class="textoConteudoAbout">
-                            Desde cedo, enfrentei rotinas desafiadoras que me ajudaram a desenvolver disciplina e resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a escola e, à tarde, conciliava trabalho e estudos no SEST SENAT. Sempre levava minha marmita na bolsa, o que nem sempre era fácil, às vezes, as condições do dia faziam com que a comida azedasse, me ensinando a lidar com imprevistos e a me adaptar às circunstâncias...
+                            Desde cedo, enfrentei rotinas desafiadoras que me ajudaram a desenvolver disciplina e
+                            resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a escola
+                            e, à tarde, conciliava trabalho e estudos no SEST SENAT. Sempre levava minha marmita na
+                            bolsa, o que nem sempre era fácil, às vezes, as condições do dia faziam com que a comida
+                            azedasse, me ensinando a lidar com imprevistos e a me adaptar às circunstâncias...
                         </p>
-                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal" data-bs-target="#modalPeloQuePassei">Ver mais</button>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
+                            data-bs-target="#modalPeloQuePassei">Ver mais</button>
                     </div>
                 </div>
 
@@ -609,9 +634,13 @@
                     <div class="content-text">
                         <h1>Onde quero chegar?</h1>
                         <p class="textoConteudoAbout">
-                            Meu maior objetivo é tornar-me professor de tecnologia, compartilhando conhecimento e contribuindo para a formação de novos profissionais na área. Sempre fui apaixonado por aprender e ensinar, e acredito que a educação é o caminho para transformar vidas e impulsionar o desenvolvimento profissional...
+                            Meu maior objetivo é tornar-me professor de tecnologia, compartilhando conhecimento e
+                            contribuindo para a formação de novos profissionais na área. Sempre fui apaixonado por
+                            aprender e ensinar, e acredito que a educação é o caminho para transformar vidas e
+                            impulsionar o desenvolvimento profissional...
                         </p>
-                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal" data-bs-target="#modalOndeQueroChegar">Ver mais</button>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
+                            data-bs-target="#modalOndeQueroChegar">Ver mais</button>
                     </div>
                 </div>
 
@@ -623,9 +652,14 @@
                     <div class="content-text">
                         <h1>O que já conquistei?</h1>
                         <p class="textoConteudoAbout">
-                            Ao longo da minha trajetória, cada desafio enfrentado foi um passo rumo às minhas conquistas. Hoje, tenho meu próprio veículo, certificações que comprovam minha dedicação aos estudos, incluindo reconhecimentos como aluno destaque e cursos concluídos com excelência. Meus esforços também renderam notas máximas em trabalhos avaliativos, além de uma medalha e prêmios que simbolizam minha busca constante por evolução...
+                            Ao longo da minha trajetória, cada desafio enfrentado foi um passo rumo às minhas
+                            conquistas. Hoje, tenho meu próprio veículo, certificações que comprovam minha dedicação aos
+                            estudos, incluindo reconhecimentos como aluno destaque e cursos concluídos com excelência.
+                            Meus esforços também renderam notas máximas em trabalhos avaliativos, além de uma medalha e
+                            prêmios que simbolizam minha busca constante por evolução...
                         </p>
-                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal" data-bs-target="#modalConquistei">Ver mais</button>
+                        <button type="button" class="btn btn-primary btnVerMais" data-bs-toggle="modal"
+                            data-bs-target="#modalConquistei">Ver mais</button>
                     </div>
                 </div>
 
@@ -639,7 +673,8 @@
                 <div class="content-block" data-aos="fade-up" data-aos-duration="1500">
                     <div class="content-text">
                         <h1>Leitura</h1>
-                        <p>Compartilho aqui livros que marcaram minha trajetória, seja no crescimento profissional ou pessoal. Espero que eles agreguem tanto para você quanto agregaram para mim!</p>
+                        <p>Compartilho aqui livros que marcaram minha trajetória, seja no crescimento profissional ou
+                            pessoal. Espero que eles agreguem tanto para você quanto agregaram para mim!</p>
                     </div>
                     <div class="content-image moving-element">
                         <img src="../assets/img/about/about_20.jpg" alt="Leitura Recomendada" class="img-fluid">
@@ -648,7 +683,7 @@
 
                 <!-- Cards de Livros -->
                 <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">LIVROS</h2>
-                
+
                 <div class="row mb-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="about-card">
@@ -685,7 +720,8 @@
                 <div class="row mb-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="about-card">
-                            <img src="../assets/img/about/about_29.jpg" class="about-card-img" alt="O Codificador Limpo">
+                            <img src="../assets/img/about/about_29.jpg" class="about-card-img"
+                                alt="O Codificador Limpo">
                             <div class="about-card-body">
                                 <h5 class="about-card-title">O Codificador Limpo</h5>
                                 <h7 class="about-card-title">Robert C. Martin</h7>
@@ -718,7 +754,8 @@
                 <div class="row" data-aos="fade-up" data-aos-duration="1000">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="about-card">
-                            <img src="../assets/img/about/about_25.jpg" class="about-card-img" alt="Mais Esperto que o Diabo">
+                            <img src="../assets/img/about/about_25.jpg" class="about-card-img"
+                                alt="Mais Esperto que o Diabo">
                             <div class="about-card-body">
                                 <h5 class="about-card-title">Mais Esperto que o Diabo</h5>
                                 <h7 class="about-card-title">Napoleon Hill</h7>
@@ -762,7 +799,11 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        Olá! Meu nome é Rafael Fagundes, e é um prazer tê-lo em meu portfólio. Atualmente, sou estudante de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em Desenvolvimento de Sistemas. Sou um jovem em constante busca pelo aperfeiçoamento profissional, sempre empenhado em expandir meus conhecimentos. Considero-me uma pessoa dedicada e atenta, enfrentando e superando rotinas intensas e desafiadoras entre estudos e trabalho...
+                        Olá! Meu nome é Rafael Fagundes, e é um prazer tê-lo em meu portfólio. Atualmente, sou estudante
+                        de Ciência da Computação na Universidade Cruzeiro do Sul e formado como Técnico em
+                        Desenvolvimento de Sistemas. Sou um jovem em constante busca pelo aperfeiçoamento profissional,
+                        sempre empenhado em expandir meus conhecimentos. Considero-me uma pessoa dedicada e atenta,
+                        enfrentando e superando rotinas intensas e desafiadoras entre estudos e trabalho...
                     </p>
                 </div>
             </div>
@@ -770,7 +811,8 @@
     </div>
 
     <!-- Modal Pelo que já passei -->
-    <div class="modal fade" id="modalPeloQuePassei" tabindex="-1" aria-labelledby="modalPeloQuePasseiLabel" aria-hidden="true">
+    <div class="modal fade" id="modalPeloQuePassei" tabindex="-1" aria-labelledby="modalPeloQuePasseiLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -779,11 +821,21 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        Desde cedo, enfrentei rotinas desafiadoras que me ajudaram a desenvolver disciplina e resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a escola e, à tarde, conciliava trabalho e estudos no SEST SENAT. Sempre levava minha marmita na bolsa, o que nem sempre era fácil, às vezes, as condições do dia faziam com que a comida azedasse, me ensinando a lidar com imprevistos e a me adaptar às circunstâncias.
+                        Desde cedo, enfrentei rotinas desafiadoras que me ajudaram a desenvolver disciplina e
+                        resiliência. Acordava às 5h para participar das atividades na igreja, seguia para a escola e, à
+                        tarde, conciliava trabalho e estudos no SEST SENAT. Sempre levava minha marmita na bolsa, o que
+                        nem sempre era fácil, às vezes, as condições do dia faziam com que a comida azedasse, me
+                        ensinando a lidar com imprevistos e a me adaptar às circunstâncias.
                         <br><br>
-                        Após o trabalho ou o SEST SENAT, meu dia ainda estava longe de acabar. Às 19h, eu iniciava as aulas no SENAI, onde cursava Técnico em Desenvolvimento de Sistemas até as 22h30. A escola ficava longe de casa, e, sem outro meio de transporte, eu fazia todo esse trajeto de bicicleta, pedalando o dia inteiro. Quando finalmente chegava em casa, ainda precisava dedicar tempo aos trabalhos avaliativos da escola e do SENAI, o que muitas vezes me deixava com pouquíssimas horas de sono.
+                        Após o trabalho ou o SEST SENAT, meu dia ainda estava longe de acabar. Às 19h, eu iniciava as
+                        aulas no SENAI, onde cursava Técnico em Desenvolvimento de Sistemas até as 22h30. A escola
+                        ficava longe de casa, e, sem outro meio de transporte, eu fazia todo esse trajeto de bicicleta,
+                        pedalando o dia inteiro. Quando finalmente chegava em casa, ainda precisava dedicar tempo aos
+                        trabalhos avaliativos da escola e do SENAI, o que muitas vezes me deixava com pouquíssimas horas
+                        de sono.
                         <br><br>
-                        Foi um período intenso, mas que moldou minha determinação e minha paixão por tecnologia. Hoje, levo comigo essa mesma dedicação em tudo o que faço.
+                        Foi um período intenso, mas que moldou minha determinação e minha paixão por tecnologia. Hoje,
+                        levo comigo essa mesma dedicação em tudo o que faço.
                     </p>
                 </div>
             </div>
@@ -791,7 +843,8 @@
     </div>
 
     <!-- Modal Onde quero chegar -->
-    <div class="modal fade" id="modalOndeQueroChegar" tabindex="-1" aria-labelledby="modalOndeQueroChegarLabel" aria-hidden="true">
+    <div class="modal fade" id="modalOndeQueroChegar" tabindex="-1" aria-labelledby="modalOndeQueroChegarLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -800,9 +853,17 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        Meu maior objetivo é tornar-me professor de tecnologia, compartilhando conhecimento e contribuindo para a formação de novos profissionais na área. Sempre fui apaixonado por aprender e ensinar, e acredito que a educação é o caminho para transformar vidas e impulsionar o desenvolvimento profissional. Busco constantemente aprimorar minhas habilidades técnicas e didáticas para oferecer um ensino de qualidade, baseado em prática e inovação. Com minha experiência em Desenvolvimento de Sistemas e minha trajetória acadêmica em Ciência da Computação, desejo capacitar futuros profissionais, tornando a tecnologia mais acessível e compreensível para todos.
+                        Meu maior objetivo é tornar-me professor de tecnologia, compartilhando conhecimento e
+                        contribuindo para a formação de novos profissionais na área. Sempre fui apaixonado por aprender
+                        e ensinar, e acredito que a educação é o caminho para transformar vidas e impulsionar o
+                        desenvolvimento profissional. Busco constantemente aprimorar minhas habilidades técnicas e
+                        didáticas para oferecer um ensino de qualidade, baseado em prática e inovação. Com minha
+                        experiência em Desenvolvimento de Sistemas e minha trajetória acadêmica em Ciência da
+                        Computação, desejo capacitar futuros profissionais, tornando a tecnologia mais acessível e
+                        compreensível para todos.
                         <br><br>
-                        Estou comprometido em evoluir continuamente, tanto como profissional quanto como educador, para fazer a diferença na vida de meus alunos e no mercado de tecnologia.
+                        Estou comprometido em evoluir continuamente, tanto como profissional quanto como educador, para
+                        fazer a diferença na vida de meus alunos e no mercado de tecnologia.
                     </p>
                 </div>
             </div>
@@ -810,7 +871,8 @@
     </div>
 
     <!-- Modal O que já conquistei -->
-    <div class="modal fade" id="modalConquistei" tabindex="-1" aria-labelledby="modalConquisteiLabel" aria-hidden="true">
+    <div class="modal fade" id="modalConquistei" tabindex="-1" aria-labelledby="modalConquisteiLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -819,9 +881,17 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        Ao longo da minha trajetória, cada desafio enfrentado foi um passo rumo às minhas conquistas. Hoje, tenho meu próprio veículo, certificações que comprovam minha dedicação aos estudos, incluindo reconhecimentos como aluno destaque e cursos concluídos com excelência. Meus esforços também renderam notas máximas em trabalhos avaliativos, além de uma medalha e prêmios que simbolizam minha busca constante por evolução.
+                        Ao longo da minha trajetória, cada desafio enfrentado foi um passo rumo às minhas conquistas.
+                        Hoje, tenho meu próprio veículo, certificações que comprovam minha dedicação aos estudos,
+                        incluindo reconhecimentos como aluno destaque e cursos concluídos com excelência. Meus esforços
+                        também renderam notas máximas em trabalhos avaliativos, além de uma medalha e prêmios que
+                        simbolizam minha busca constante por evolução.
                         <br><br>
-                        Além disso, conquistei uma vaga como Operador de Sistemas de Informática na empresa BigCard, uma área em que as oportunidades são muito disputadas. O processo seletivo foi desafiador, com mais de 25 candidatos concorrendo, mas minha preparação e perseverança me levaram à aprovação. Essa conquista representa não apenas minha capacidade técnica, mas também minha determinação em alcançar meus objetivos.
+                        Além disso, conquistei uma vaga como Operador de Sistemas de Informática na empresa BigCard, uma
+                        área em que as oportunidades são muito disputadas. O processo seletivo foi desafiador, com mais
+                        de 25 candidatos concorrendo, mas minha preparação e perseverança me levaram à aprovação. Essa
+                        conquista representa não apenas minha capacidade técnica, mas também minha determinação em
+                        alcançar meus objetivos.
                     </p>
                 </div>
             </div>
@@ -847,8 +917,8 @@
                         onclick="successTransition('Github', event)">
                         <i class='bx bxl-github'></i>
                     </a>
-                    <a class="social-links" href="https://www.facebook.com/profile.php?id=100013959692622" target="_blank"
-                        onclick="successTransition('Facebook', event)">
+                    <a class="social-links" href="https://www.facebook.com/profile.php?id=100013959692622"
+                        target="_blank" onclick="successTransition('Facebook', event)">
                         <i class='bx bxl-facebook'></i>
                     </a>
                 </div>
@@ -880,7 +950,7 @@
         AOS.init();
 
         // Efeito de scroll no header
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
                 header.classList.add('header-scrolled');
@@ -890,7 +960,7 @@
         });
 
         // Chart.js para habilidades
-         const ctx = document.getElementById('techSkillsChart').getContext('2d');
+        const ctx = document.getElementById('techSkillsChart').getContext('2d');
         const techSkillsChart = new Chart(ctx, {
             type: 'bar', // você pode trocar para 'radar', 'doughnut', 'line', etc.
             data: {
@@ -906,7 +976,7 @@
                 responsive: true,
                 plugins: {
                     legend: {
-                        display: false 
+                        display: false
                     },
                     tooltip: {
                         backgroundColor: '#000',
@@ -919,7 +989,7 @@
                         beginAtZero: true,
                         max: 100,
                         ticks: {
-                            callback: function(value) {
+                            callback: function (value) {
                                 return value + '%';
                             }
                         }

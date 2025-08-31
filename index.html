@@ -64,20 +64,20 @@
       }
     }
 
-     .navbar {
-            padding: 1rem 0;
-            border: none;
-        }
+    .navbar {
+      padding: 1rem 0;
+      border: none;
+    }
 
 
-        /* Diminuindo tamanho header para mobiles */
+    /* Diminuindo tamanho header para mobiles */
 
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 0.5rem 0;
-                ;
-            }
-        }
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 0.5rem 0;
+        ;
+      }
+    }
 
     .navbar-brand img {
       transition: transform 0.3s ease;
@@ -98,20 +98,22 @@
     }
 
     .navTitles {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       color: #ffffff;
       transition: all 0.3s ease;
       font-size: 0.9rem;
       font-weight: 500;
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
-      padding: 0.8rem 1.5rem;
+      padding: 0.4rem 1rem;
       border-radius: 25px;
     }
 
     .navTitles:hover {
       color: #000000;
       background-color: #ffffff;
-      transform: translateY(-2px);
     }
 
     /* Main content com espaçamento para header fixo */
@@ -306,8 +308,15 @@
 
     /* Animações */
     @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
     }
 
     .moving-element {
@@ -398,7 +407,7 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
       transition: all 0.6s ease;
     }
 
@@ -420,8 +429,15 @@
     }
 
     @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.1); }
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
     }
 
     /* Header scroll effect */
@@ -497,8 +513,9 @@
             <h1>
               Transformo <span class="highlight">suas ideias</span> em soluções digitais que geram resultados
             </h1>
-            <p>Olá! Sou Rafael Fagundes, desenvolvedor apaixonado por criar experiências digitais únicas e funcionais.</p>
-            
+            <p>Olá! Sou Rafael Fagundes, desenvolvedor apaixonado por criar experiências digitais únicas e funcionais.
+            </p>
+
             <div class="tech-badges">
               <span class="tech-badge"><i class='bx bxl-php'></i></span>
               <span class="tech-badge"><i class='bx bxl-jquery'></i></span>
@@ -506,15 +523,16 @@
               <span class="tech-badge"><i class='bx bxs-data'></i></span>
               <span class="tech-badge"><i class='bx bxl-git'></i></span>
             </div>
-            
+
             <div class="cta-section" style="margin-top: 3rem;">
-              <a href="https://wa.me/5533991414767?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto." target="_blank" class="whatsapp-btn">
+              <a href="https://wa.me/5533991414767?text=Olá! Vi seu portfólio e gostaria de conversar sobre um projeto."
+                target="_blank" class="whatsapp-btn">
                 <i class='bx bxl-whatsapp'></i>
                 Vamos conversar
               </a>
             </div>
           </div>
-          
+
           <div class="hero-image moving-element">
             <img src="assets/img/rafaelFagundes.png" alt="Rafael Fagundes" class="img-fluid">
           </div>
@@ -537,7 +555,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card custom-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
               <img src="assets/img/projects/pnh.png" class="card-img-top" alt="Preta Nails Hair">
@@ -548,7 +566,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card custom-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
               <img src="assets/img/projects/actionHeroes.PNG" class="card-img-top" alt="Action Heroes">
@@ -613,7 +631,7 @@
     AOS.init();
 
     // Efeito de scroll no header
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       const header = document.querySelector('header');
       if (window.scrollY > 50) {
         header.classList.add('header-scrolled');
@@ -623,4 +641,5 @@
     });
   </script>
 </body>
+
 </html>
