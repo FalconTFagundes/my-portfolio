@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fagundes</title>
+    <title>Fagundes - Currículo</title>
 
     <!-- link font Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -69,13 +69,10 @@
             border: none;
         }
 
-
         /* Diminuindo tamanho header para mobiles */
-
         @media (max-width: 768px) {
             .navbar {
                 padding: 0.5rem 0;
-                ;
             }
         }
 
@@ -258,6 +255,193 @@
             line-height: 1.5;
         }
 
+        /* Seção de Certificações */
+        .certifications-section {
+            background-color: #ffffff;
+            padding: 6rem 0;
+        }
+
+        /* Seção de Diplomas com fundo diferente */
+        .diplomas-section {
+            background-color: #f8f9fa;
+            padding: 6rem 0;
+        }
+
+        .certification-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 2px solid transparent;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+            border-color: #000000;
+        }
+
+        /* Card de Diploma com destaque dourado */
+        .diploma-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 2px solid transparent;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .diploma-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.3);
+            border-color: #d4af37;
+        }
+
+        .cert-image-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .cert-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .certification-card:hover .cert-image,
+        .diploma-card:hover .cert-image {
+            transform: scale(1.05);
+        }
+
+        /* Badge para Certificados (preto) */
+        .cert-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Badge para Diplomas (dourado) */
+        .diploma-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #d4af37 0%, #f4e5a1 100%);
+            color: #000000;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+        }
+
+        .cert-content {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .certification-card h4,
+        .diploma-card h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 0.8rem;
+        }
+
+        .cert-issuer {
+            color: #666666;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .cert-date {
+            color: #999999;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .cert-description {
+            color: #555555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* Link para Certificados (preto) */
+        .cert-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: #000000;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            padding: 0.7rem 1rem;
+            border-radius: 25px;
+            border: 2px solid #000000;
+            margin-top: auto;
+        }
+
+        .cert-link:hover {
+            background-color: #000000;
+            color: #ffffff;
+            transform: translateX(5px);
+        }
+
+        /* Link para Diplomas (dourado) */
+        .diploma-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: #000000;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            padding: 0.7rem 1rem;
+            border-radius: 25px;
+            border: 2px solid #d4af37;
+            margin-top: auto;
+        }
+
+        .diploma-link:hover {
+            background-color: #d4af37;
+            color: #000000;
+            transform: translateX(5px);
+        }
+
+        .cert-link i,
+        .diploma-link i {
+            font-size: 1.1rem;
+        }
+
         /* Footer preto */
         footer {
             background-color: #000000;
@@ -325,6 +509,15 @@
             .cv-download-btn {
                 padding: 1rem 2rem;
                 font-size: 1rem;
+            }
+
+            .certification-card,
+            .diploma-card {
+                margin-bottom: 2rem;
+            }
+
+            .cert-image-container {
+                height: 200px;
             }
 
             footer {
@@ -426,6 +619,324 @@
                             Baixar Currículo
                         </a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de DIPLOMAS -->
+        <section class="diplomas-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down" data-aos-duration="1500">
+                    <i class='bx bxs-award' style="color: #d4af37;"></i> DIPLOMAS
+                </h2>
+
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="diploma-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/cruzeiroDoSul.png" alt="Diploma Cruzeiro do Sul"
+                                    class="cert-image">
+                                <div class="diploma-badge">
+                                    <i class='bx bxs-graduation'></i> Diploma
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Ciência da Computação</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i> Universidade Cruzeiro do Sul</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Em andamento</p>
+                                <p class="cert-description">
+                                    Graduação em Ciência da Computação com foco em desenvolvimento de software,
+                                    algoritmos e estruturas de dados.
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="diploma-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="diploma-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/desenvolvimento_de_sistemas.png" alt="Diploma SENAI"
+                                    class="cert-image">
+                                <div class="diploma-badge">
+                                    <i class='bx bxs-graduation'></i> Diploma
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Técnico em Desenvolvimento de Sistemas</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i> SENAI - Serviço Nacional de
+                                    Aprendizagem Industrial</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Ago/2022 - Dez/2023</p>
+                                <p class="cert-description">
+                                    Atividades e grupos: Programação, versionamento, código limpo, comunicação
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="diploma-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de CERTIFICADOS -->
+        <section class="certifications-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down" data-aos-duration="1500">
+                    <i class='bx bxs-certification'></i> CERTIFICADOS
+                </h2>
+
+                <div class="row g-4">
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="certification-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/admRedeseServidores.png"
+                                    alt="Administração de Redes e Servidores" class="cert-image">
+                                <div class="cert-badge">
+                                    <i class='bx bxs-certification'></i> Certificado
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Administração de Redes e Servidores</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i>Universidade Cruzeiro do Sul</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Dezembro 2025</p>
+                                <p class="cert-description">
+                                    Trilhas customizáveis - Cruzeiro do Sul
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="cert-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="certification-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/masterClass.png"
+                                    alt="Master Class, Max Gehringer: Gestão Estratégica de Carreira no Cenário Atual"
+                                    class="cert-image">
+                                <div class="cert-badge">
+                                    <i class='bx bxs-certification'></i> Certificado
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Master Class, Max Gehringer: Gestão Estratégica de Carreira no Cenário Atual</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i>Universidade Cruzeiro do Sul</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Junho 2025</p>
+                                <p class="cert-description">
+                                    Master Class - Cruzeiro do Sul
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="cert-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="certification-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/phpDoZero.png"
+                                    alt="PHP do Zero - Criando sistemas com PHP e MySQL na prática" class="cert-image">
+                                <div class="cert-badge">
+                                    <i class='bx bxs-certification'></i> Certificado
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>PHP do Zero - Criando sistemas com PHP e MySQL na prática</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i>Udemy</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Março 2025</p>
+                                <p class="cert-description">
+                                    Curso completo de PHP e MySQL com foco em desenvolvimento prático de sites e
+                                    sistemas web, abordando desde lógica de programação até criação de plataformas
+                                    complexas, sistemas de login, envio de e-mails e hospedagem de projetos
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="cert-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="certification-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/informatica_tecnologia.png"
+                                    alt="Informática e Tecnologia" class="cert-image">
+                                <div class="cert-badge">
+                                    <i class='bx bxs-certification'></i> Certificado
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Informática e Tecnologia</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i>Via Certa</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Abril 2024</p>
+                                <p class="cert-description">
+                                    Curso abrangente que explora a informática do nível básico ao avançado, incluindo
+                                    fundamentos de hardware e software, operação de sistemas operacionais e uso
+                                    profissional do Pacote Office.
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="cert-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="certification-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/aprendizagemProfissional-SestSenat.png"
+                                    alt="Aprendizagem Profissional - Assistente Administrativo" class="cert-image">
+                                <div class="cert-badge">
+                                    <i class='bx bxs-certification'></i> Certificado
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Aprendizagem Profissional - Assistente Administrativo</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i>Sest Senat</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Mar/2023 - Fev/2024</p>
+                                <p class="cert-description">
+                                    Atividades Práticas - Aprendizagem Profissional · Comunicação Oral e Escrita ·
+                                    Mercado de Trabalho e Empreendedorismo · Noções de Direito e de Segurança do
+                                    Trabalho · Noções de Educação Financeira · Relações Interpessoais, Éticas e Sociais
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="cert-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="certification-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/destaque.png" alt="Estudante Destaque"
+                                    class="cert-image">
+                                <div class="cert-badge">
+                                    <i class='bx bxs-certification'></i> Certificado
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Estudante Destaque - Ensino Médio</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i>E. E. Pref. Joaquim Pedro
+                                    Nascimento</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Maio 2023</p>
+                                <p class="cert-description">
+                                    Certificação de estudante destaque 3° ano do ensino médio.
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="cert-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="certification-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/gestao_projetos.png" alt="Gestão de Projetos"
+                                    class="cert-image">
+                                <div class="cert-badge">
+                                    <i class='bx bxs-certification'></i> Certificado
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Gestão de Projetos</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i>Sest Senat</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Julho 2023</p>
+                                <p class="cert-description">
+                                    Fases e planejamento de um projeto, bem como os estudos de viabilidade, decisões
+                                    que precisam ser tomadas e gerenciamento de custos e riscos.
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="cert-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="certification-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/gestão_conflitos.png" alt="Gestão de Conflitos"
+                                    class="cert-image">
+                                <div class="cert-badge">
+                                    <i class='bx bxs-certification'></i> Certificado
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Gestão de Conflitos</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i>Sest Senat</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Novembro 2022</p>
+                                <p class="cert-description">
+                                    Desenvolvimento de habilidades essenciais para liderança e resolução de conflitos,
+                                    como a prevenção de
+                                    situações de estresse e como manter um bom clima organizacional.
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="cert-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="certification-card">
+                            <div class="cert-image-container">
+                                <img src="../assets/img/curriculo/aprendizagemProfissional-Senac.png"
+                                    alt="Aprendizagem Profissional de Qualificação em Serviços de Supermercados"
+                                    class="cert-image">
+                                <div class="cert-badge">
+                                    <i class='bx bxs-certification'></i> Certificado
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Aprendizagem Profissional de Qualificação em Serviços de Supermercados</h4>
+                                <p class="cert-issuer"><i class='bx bx-building'></i>Senac</p>
+                                <p class="cert-date"><i class='bx bx-calendar'></i> Fevereiro 2022</p>
+                                <p class="cert-description">
+                                    Programa de Aprendizagem Profissional em Serviços de Supermercados pelo SENAC,
+                                    combinando formação teórica em comunicação, logística e finanças com prática
+                                    profissional em operações de varejo, incluindo repositor, estoquista e empacotador.
+                                </p>
+                                <a href="https://www.linkedin.com/in/rafael-fagundes-518974258/" class="cert-link"
+                                    target="_blank">
+                                    Ver Mais
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
